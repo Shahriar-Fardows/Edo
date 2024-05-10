@@ -9,6 +9,7 @@ const Routes = createBrowserRouter([
         path: "/",
         element: <Root/> ,
         errorElement: <Error/> ,
+        loader: () => import("../Root"),
         children: [
             {
               path: "/",
