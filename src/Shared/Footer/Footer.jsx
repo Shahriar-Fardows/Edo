@@ -1,8 +1,8 @@
 
 const Footer = () => {
   return (
-    <footer className="w-full text-emerald-200">
-      <div className="py-4 text-sm border-t border-emerald-700 bg-emerald-600">
+    <footer className="w-full text-sky-500">
+      <div className="py-4 text-sm border-t border-sky-500 bg-white">
         <div className="container px-6 mx-auto">
           <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
             <div className="col-span-2 md:col-span-4 lg:col-span-6">
@@ -18,7 +18,7 @@ const Footer = () => {
               <ul className="flex items-center justify-end gap-4">
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="#"
                     className="transition-colors duration-300 hover:text-emerald-100"
                   >
                     <svg
@@ -46,7 +46,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="#"
                     className="transition-colors duration-300 hover:text-emerald-100"
                   >
                     <svg
@@ -72,7 +72,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="#"
                     className="transition-colors duration-300 hover:text-emerald-100"
                   >
                     <svg
