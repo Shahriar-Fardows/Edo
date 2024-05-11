@@ -1,55 +1,6 @@
+**Post Free Ads in Nigeria | Edo**
 
-# CARid Project
-
-Build a Listing-web-site application using the MERN (MongoDB, Express.js, React.js, TailwindCSS) stack. The application should allow users to perform CRUD operations on Listing, register accounts, log in, and exclusively manage their own All Listing Website.Pagination and input validation are mandatory.
-
-
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/Shahriar-Fardows/Listing-web-site
-```
-
-Go to the project directory
-
-```bash
-  cd Listing-web-site
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run dev
-```
-
- **Run the server**
-Running on http://localhost:5173/, you would typically use a frontend framework or library in your web application.
-
-## License
-
-This project is licensed under the [MIT LICENSE](https://choosealicense.com/licenses/mit/)
+Welcome to Edo, your go-to destination for hassle-free ad posting. Whether you are selling your old couch, looking for a roommate, or advertising your business, Edo has you covered. With our user-friendly interface, posting ads is as easy as 1-2-3.
 
 
-## Deployment
-
-To deploy this project run
-
-```bash
-  npm run build
-```
-
-
-## Used By
-
-This project Created by :
-
-- [Jajangir Alam](https://www.linkedin.com/in/jahangiralom99/)
-
+Simply sign up, create your ad, and reach thousands of potential buyers or renters. Edo offers a wide range of categories to suit your needs, from real estate and jobs to vehicles and services. Our platform ensures your ads get the visibility they deserve, helping you connect with the right audience quickly and efficiently. Join Edo today and experience the simplicity and effectiveness of online ad posting like never before!
