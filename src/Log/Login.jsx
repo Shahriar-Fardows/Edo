@@ -83,8 +83,8 @@ const Login = () => {
                                 <span className="ml-1 font-extrabold">Remember me</span> */}
                             </label>
                         </div>
-                        <div className="w-full text-green-600 lg:w-auto px-4"><a className="inline-block font-extrabold hover:underline" href="#">Forgot your
-                            password?</a></div>
+                        <div className="w-full text-green-600 lg:w-auto px-4"><Link to='/forgotPassword' className="inline-block font-extrabold hover:underline" href="#">Forgot your
+                            password?</Link></div>
                     </div>
                     <button className="inline-block w-full py-4 px-6 mb-6 text-center text-lg leading-6 text-white font-extrabold bg-green-500 hover:bg-[#1F2937] border-3 border-[#1F2937] shadow rounded transition duration-200">Sign in</button>
                     <p className="text-center font-extrabold">Don&rsquo;t have an account? <Link to='/signUp' className="text-green-500 hover:underline"

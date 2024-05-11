@@ -1,4 +1,4 @@
-import Content from "./Content/Content";
+import AllContent from "./Content/AllContent";
 import CountryData from "./CountryData/CountryData";
 import Sponsored from "./Sponsored/Sponsored";
 
@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <div>
             <CountryData/>
-            <Content/>
+            <AllContent/>
            <Sponsored/>
         </div>
     );

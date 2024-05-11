@@ -1,7 +1,7 @@
 
 const CountryData = () => {
     return (
-        <div className="border border-green-500 border-dashed py-10 px-10 my-5 ">
+        <div className="border border-green-500 border-dashed py-10 px-10 my-5 w-full ">
             <div className="relative my-6 md:w-60">
                 <select id="id-04" name="id-04" required className="relative w-full h-10 px-4 text-sm transition-all bg-white border rounded outline-none appearance-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white focus:border-emerald-500 focus:focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400">
                     <option value="1">Option 1</option>

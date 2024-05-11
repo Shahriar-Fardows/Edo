@@ -20,7 +20,7 @@ const Sponsored = () => {
         <div className="border border-green-500 border-dashed py-10 px-10 ">
             <h1 className="text-center text-3xl text-green-500 underline font-bold	">SPONSORED WEBSITES</h1>
 
-            <div className="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-4 py-12 gap-2">
+            <div className="grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-5 py-12 gap-2">
                 {
                     data.map(item => (
                         <div key={item.id} className="py-1">
