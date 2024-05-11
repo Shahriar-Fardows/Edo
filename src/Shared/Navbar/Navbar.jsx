@@ -81,7 +81,7 @@ const Navbar = () => {
                                 fill="rgba(255,255,255,.2)"
                             />
                         </svg>
-                        Brand
+                        Edo
                     </NavLink>
                     {/*      <!-- Mobile trigger --> */}
                     <button
