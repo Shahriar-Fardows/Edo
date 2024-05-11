@@ -15,7 +15,7 @@ const Navbar = () => {
             <NavLink to='/'
                 role="menuitem"
                 aria-haspopup="false"
-                className="flex items-center active:text-green-500 gap-2 py-4 transition-colors duration-300 hover:text-green-500 focus:text-green-600 focus:outline-none focus-visible:outline-none lg:px-8"
+                className="flex items-center active:text-sky-500 gap-2 py-4 transition-colors duration-300 hover:text-sky-500 focus:text-sky-600 focus:outline-none focus-visible:outline-none lg:px-8"
             >
                 <span>Home</span>
             </NavLink>
@@ -24,18 +24,18 @@ const Navbar = () => {
             <NavLink to='/dashboard'
                 role="menuitem"
                 aria-haspopup="false"
-                className="flex items-center gap-2 py-4 active:text-green-500 transition-colors duration-300 hover:text-green-600 focus:text-green-600 focus:outline-none focus-visible:outline-none lg:px-8"
+                className="flex items-center gap-2 py-4 active:text-sky-500 transition-colors duration-300 hover:text-sky-600 focus:text-sky-600 focus:outline-none focus-visible:outline-none lg:px-8"
             >
-                <span>Planning</span>
+                <span>Dashboard</span>
             </NavLink>
         </li>
         <li role="none" className="flex items-stretch">
             <NavLink to='/profile'
                 role="menuitem"
                 aria-haspopup="false"
-                className="flex items-center active:text-green-500 gap-2 py-4 transition-colors duration-300 hover:text-green-500 focus:text-green-600 focus:outline-none focus-visible:outline-none lg:px-8"
+                className="flex items-center active:text-sky-500 gap-2 py-4 transition-colors duration-300 hover:text-sky-500 focus:text-sky-600 focus:outline-none focus-visible:outline-none lg:px-8"
             >
-                <span>About me</span>
+                <span>Profile</span>
             </NavLink>
         </li>
         <li role="none" className="flex items-stretch">
@@ -66,7 +66,7 @@ const Navbar = () => {
                             viewBox="0 0 300 300"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-12 w-12 bg-green-500"
+                            className="h-12 w-12 bg-sky-500"
                         >
                             <path
                                 fillRule="evenodd"
@@ -146,7 +146,7 @@ const Navbar = () => {
                                 </ul>
                             </div>
                         </div> : <NavLink to='/login' className="ml-auto flex items-center px-6 lg:ml-0 lg:p-0">
-                            <button className="inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded bg-emerald-500 px-5 text-sm font-medium tracking-wide text-white shadow-md shadow-emerald-200 transition duration-300 hover:bg-emerald-600 hover:shadow-sm hover:shadow-emerald-200 focus:bg-emerald-700 focus:shadow-sm focus:shadow-emerald-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+                            <button className="inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded bg-sky-400 px-5 text-sm font-medium tracking-wide text-white shadow-md shadow-sky-200 transition duration-300 hover:bg-sky-500 hover:shadow-sm hover:shadow-sky-200 focus:bg-sky-400 focus:shadow-sm focus:shadow-sky-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-sky-300 disabled:bg-sky-300 disabled:shadow-none">
                                 <FaRegUserCircle className="text-[2rem]" />
                                 <h1>Login</h1>
                             </button>

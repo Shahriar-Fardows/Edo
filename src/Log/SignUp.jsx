@@ -54,6 +54,7 @@ const SignUp = () => {
                     icon: 'success',
                     confirmButtonText: 'Cool'
                 })
+                
             })
             .catch(() => {
                 Swal.fire({
@@ -62,7 +63,6 @@ const SignUp = () => {
                     icon: 'error',
                     confirmButtonText: 'Try again'
                 })
-                // ..
             });
         }
         
@@ -73,20 +73,20 @@ const SignUp = () => {
         <div className="container px-4 mx-auto my-10">
             <div className="max-w-lg mx-auto">
                 <div className="text-center mb-6">
-                    <h2 className="text-3xl md:text-4xl text-green-500 font-extrabold">Sign up</h2>
+                    <h2 className="text-3xl md:text-4xl text-sky-500 font-extrabold">Sign up</h2>
                 </div>
                 <form action="" onSubmit={signUpData} >
                     <div className="mb-6">
                         <label className="block mb-2 font-extrabold" htmlFor="">Email</label>
-                        <input className="inline-block w-full text-green-500 p-4 leading-6 text-lg font-extrabold placeholder-[#1F2937] bg-white shadow border-2 border-[#1F2937] rounded" type="email" name='email' placeholder="email" />
+                        <input className="inline-block w-full text-sky-500 p-4 leading-6 text-lg font-extrabold placeholder-[#1F2937] bg-white shadow border-2 border-[#1F2937] rounded" type="email" name='email' placeholder="email" />
                     </div>
                     <div className="mb-6">
                         <label className="block mb-2 font-extrabold" htmlFor="">Password</label>
                         <div className=" flex   leading-6 border-2 border-[#1F2937] rounded ">
-                            <input className="text-lg outline-none	 p-4 w-full border-0	text-green-500 font-extrabold placeholder-[#1F2937]" type={visible ? 'text' : 'password'} name="password" id="" placeholder="**********" />
+                            <input className="text-lg outline-none	 p-4 w-full border-0	text-sky-500 font-extrabold placeholder-[#1F2937]" type={visible ? 'text' : 'password'} name="password" id="" placeholder="**********" />
                             <div className="flex items-center px-4">
                                 {
-                                    visible ? <IoEye style={{ cursor: 'pointer' }} className="text-xl text-green-500" onClick={showPassword} /> : <IoMdEyeOff style={{ cursor: 'pointer' }} className="text-xl text-green-500" onClick={showPassword} />
+                                    visible ? <IoEye style={{ cursor: 'pointer' }} className="text-xl text-sky-500" onClick={showPassword} /> : <IoMdEyeOff style={{ cursor: 'pointer' }} className="text-xl text-sky-500" onClick={showPassword} />
                                 }
                             </div>
                         </div>
@@ -98,9 +98,9 @@ const SignUp = () => {
                         <div className="w-full lg:w-auto px-4"></div>
                     </div>
                     <div >
-                        <button className="inline-block w-full py-4 px-6 mb-6 text-center text-lg leading-6 text-white font-extrabold  hover:bg-[#1F2937] border-3 border-[#1F2937] shadow rounded transition duration-200 bg-green-500">Sign up</button>
+                        <button className="inline-block w-full py-4 px-6 mb-6 text-center text-lg leading-6 text-white font-extrabold  hover:bg-[#1F2937] border-3 border-[#1F2937] shadow rounded transition duration-200 bg-sky-500">Sign up</button>
                     </div>
-                    <p className="text-center font-extrabold">Don&rsquo;t have an account? <Link to='/login' className="text-green-500 hover:underline"
+                    <p className="text-center font-extrabold">Don&rsquo;t have an account? <Link to='/login' className="text-sky-500 hover:underline"
                     >Sign in</Link></p>
                 </form>
                 <div className="">

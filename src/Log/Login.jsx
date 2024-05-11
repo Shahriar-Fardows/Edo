@@ -58,20 +58,20 @@ const Login = () => {
         <div className="container px-4 mx-auto my-10">
             <div className="max-w-lg mx-auto">
                 <div className="text-center mb-6">
-                    <h2 className="text-3xl md:text-4xl text-green-600 font-extrabold">Sign in</h2>
+                    <h2 className="text-3xl md:text-4xl text-sky-600 font-extrabold">Sign in</h2>
                 </div>
                 <form action="" onSubmit={loginData} >
                     <div className="mb-6">
                         <label className="block mb-2 font-extrabold " htmlFor="">Email</label>
-                        <input name="email" className="inline-block w-full p-4 leading-6 text-lg font-extrabold placeholder-[#1F2937] bg-white shadow border-2 text-green-600 border-[#1F2937] rounded" type="email" placeholder="email" />
+                        <input name="email" className="inline-block w-full p-4 leading-6 text-lg font-extrabold placeholder-[#1F2937] bg-white shadow border-2 text-sky-600 border-[#1F2937] rounded" type="email" placeholder="email" />
                     </div>
                     <div className="mb-6">
                         <label className="block mb-2 font-extrabold" htmlFor="">Password</label>
                         <div className=" flex   leading-6 border-2 border-[#1F2937] rounded ">
-                            <input name='password' className="text-lg outline-none	 text-green-600 p-4 w-full border-0	 font-extrabold placeholder-[#1F2937]" type={visible ? 'text' : 'password'} id="" placeholder="**********" />
+                            <input name='password' className="text-lg outline-none	 text-sky-600 p-4 w-full border-0	 font-extrabold placeholder-[#1F2937]" type={visible ? 'text' : 'password'} id="" placeholder="**********" />
                             <div className="flex items-center px-4">
                                 {
-                                    visible ? <IoEye style={{ cursor: 'pointer' }} className="text-xl text-green-600" onClick={showPassword} /> : <IoMdEyeOff style={{ cursor: 'pointer' }} className="text-xl text-green-600" onClick={showPassword} />
+                                    visible ? <IoEye style={{ cursor: 'pointer' }} className="text-xl text-sky-600" onClick={showPassword} /> : <IoMdEyeOff style={{ cursor: 'pointer' }} className="text-xl text-sky-600" onClick={showPassword} />
                                 }
                             </div>
                         </div>
@@ -83,11 +83,11 @@ const Login = () => {
                                 <span className="ml-1 font-extrabold">Remember me</span> */}
                             </label>
                         </div>
-                        <div className="w-full text-green-600 lg:w-auto px-4"><Link to='/forgotPassword' className="inline-block font-extrabold hover:underline" href="#">Forgot your
+                        <div className="w-full text-sky-600 lg:w-auto px-4"><Link to='/forgotPassword' className="inline-block font-extrabold hover:underline" href="#">Forgot your
                             password?</Link></div>
                     </div>
-                    <button className="inline-block w-full py-4 px-6 mb-6 text-center text-lg leading-6 text-white font-extrabold bg-green-500 hover:bg-[#1F2937] border-3 border-[#1F2937] shadow rounded transition duration-200">Sign in</button>
-                    <p className="text-center font-extrabold">Don&rsquo;t have an account? <Link to='/signUp' className="text-green-500 hover:underline"
+                    <button className="inline-block w-full py-4 px-6 mb-6 text-center text-lg leading-6 text-white font-extrabold bg-sky-500 hover:bg-[#1F2937] border-3 border-[#1F2937] shadow rounded transition duration-200">Sign in</button>
+                    <p className="text-center font-extrabold">Don&rsquo;t have an account? <Link to='/signUp' className="text-sky-500 hover:underline"
                     >Sign up</Link></p>
                 </form>
                 <div className="">

@@ -5,6 +5,8 @@ import Error from "../Error/Error";
 import Login from "../Log/Login";
 import SignUp from "../Log/SignUp";
 import ForgotPassword from "../Log/ForgotPassword";
+import Dashboard from "../Components/Dashboard/Dashboard";
+import Profile from "../Components/Profile/Profile";
 
 
 const Routes = createBrowserRouter([
@@ -16,6 +18,14 @@ const Routes = createBrowserRouter([
             {
               path: "/",
               element: <Home/> ,
+            },
+            {
+              path: "/dashboard",
+              element: <Dashboard/> ,
+            },
+            {
+              path: "/profile",
+              element: <Profile/> ,
             },
             {
               path: "/login",
