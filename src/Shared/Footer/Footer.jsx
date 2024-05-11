@@ -18,7 +18,7 @@ const Footer = () => {
               <ul className="flex items-center justify-end gap-4">
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="#"
                     className="transition-colors duration-300 hover:text-emerald-100"
                   >
                     <svg
@@ -46,7 +46,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="#"
                     className="transition-colors duration-300 hover:text-emerald-100"
                   >
                     <svg
@@ -72,7 +72,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="javascript:void(0)"
+                    href="#"
                     className="transition-colors duration-300 hover:text-emerald-100"
                   >
                     <svg

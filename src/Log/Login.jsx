@@ -11,11 +11,23 @@ const Login = () => {
         setVisible(!visible);
     }
 
-    const { loginUser, user, Google } = useAuthContext();
+    const { loginUser, user, google } = useAuthContext();
 
     console.log(user, 'user');
 
-    
+     const Google = () => {
+        console.log('click to hoise');
+        google()
+            .then((result) => {
+                window.location.href = "/";
+                const user = result.user;
+                console.log(user)
+            }).catch((error) => {
+                const errorMessage = error.message;
+                console.log(errorMessage)
+
+            });
+    }
 
     const loginData = e => {
         e.preventDefault();

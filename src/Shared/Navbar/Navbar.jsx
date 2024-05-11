@@ -8,7 +8,7 @@ const Navbar = () => {
     const [isToggleOpen, setIsToggleOpen] = useState(false);
 
     const { user, LogOut } = useAuthContext();
-console.log(user , 'user');
+    console.log(user, 'user');
     const navLinks = <>
 
         <li role="none" className="flex items-stretch">
@@ -23,7 +23,6 @@ console.log(user , 'user');
         <li role="none" className="flex items-stretch">
             <NavLink to='/dashboard'
                 role="menuitem"
-                // aria-current="page"
                 aria-haspopup="false"
                 className="flex items-center gap-2 py-4 active:text-green-500 transition-colors duration-300 hover:text-green-600 focus:text-green-600 focus:outline-none focus-visible:outline-none lg:px-8"
             >
@@ -40,27 +39,7 @@ console.log(user , 'user');
             </NavLink>
         </li>
         <li role="none" className="flex items-stretch">
-            <div
-                role="menuitem"
-                aria-haspopup="false"
-                className="flex items-center active:text-green-500 gap-2 py-4 transition-colors duration-300 hover:text-green-500 focus:text-green-600 focus:outline-none focus-visible:outline-none lg:px-8"
-            >
-                <div className="dropdown dropdown-end">
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                        <div className="w-10 rounded-full">
-                            <img alt="Tailwind CSS Navbar component" src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                        </div>
-                    </div>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li>
-                            <h1>
-                                {user?.email}
-                            </h1>
-                        </li>
-                        <li><h1 onClick={LogOut}>Logout</h1></li>
-                    </ul>
-                </div>
-            </div>
+
         </li>
 
     </>
@@ -79,7 +58,7 @@ console.log(user , 'user');
                         aria-label="WindUI logo"
                         aria-current="page"
                         className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
-                        href="javascript:void(0)"
+
                     >
                         <svg
                             width="300"
@@ -145,13 +124,34 @@ console.log(user , 'user');
 
                             {navLinks}
 
-                        </ul> : <NavLink to='/login' className="ml-auto flex items-center px-6 lg:ml-0 lg:p-0">
-                            {/*        <!-- Avatar --> */}
-                            <FaRegUserCircle className="text-[2rem]" />
-                            {/*        <!-- End Avatar --> */}
+                        </ul> : ''
+                    }
+                    {
+                        user ? <div
+                            className="ml-auto flex items-center px-6 lg:ml-0 lg:p-0"
+                        >
+                            <div className="dropdown dropdown-end">
+                                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                                    <div className="w-10 rounded-full">
+                                        <img alt="Tailwind CSS Navbar component" src={user?.photoURL ? user.photoURL : 'https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg'} />
+                                    </div>
+                                </div>
+                                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-56">
+                                    <li>
+                                        <h1>
+                                            {user?.email}
+                                        </h1>
+                                    </li>
+                                    <li><h1 onClick={LogOut}>Logout</h1></li>
+                                </ul>
+                            </div>
+                        </div> : <NavLink to='/login' className="ml-auto flex items-center px-6 lg:ml-0 lg:p-0">
+                            <button className="inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded bg-emerald-500 px-5 text-sm font-medium tracking-wide text-white shadow-md shadow-emerald-200 transition duration-300 hover:bg-emerald-600 hover:shadow-sm hover:shadow-emerald-200 focus:bg-emerald-700 focus:shadow-sm focus:shadow-emerald-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-emerald-300 disabled:bg-emerald-300 disabled:shadow-none">
+                                <FaRegUserCircle className="text-[2rem]" />
+                                <h1>Login</h1>
+                            </button>
                         </NavLink>
                     }
-
 
                 </nav>
             </div>

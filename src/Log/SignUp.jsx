@@ -8,8 +8,8 @@ import useAuthContext from "../Context/useAuthContext";
 const SignUp = () => {
     const [visible, setVisible] = useState(false);
 
-    const { user, createUser } = useAuthContext();
-    // console.log(user.uid, 'user');
+    const { user, createUser , google } = useAuthContext();
+    console.log(user, 'user');
 
     // if (user?.email) {
     //     return <Navigate to="/profile" />;
@@ -18,6 +18,20 @@ const SignUp = () => {
     const showPassword = () => {
         setVisible(!visible);
     }
+
+    const Google = () => {
+        google()
+            .then((result) => {
+                window.location.href = "/";
+                const user = result.user;
+                console.log(user)
+            }).catch((error) => {
+                const errorMessage = error.message;
+                console.log(errorMessage)
+
+            });
+    }
+
 
     const signUpData = e => {
         e.preventDefault();
@@ -95,6 +109,7 @@ const SignUp = () => {
                         <div className="h-px w-full bg-slate-200"></div>
                     </div>
                     <button
+                    onClick={Google}
                         className="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"><svg
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 92" fill="none"
                             className="h-[18px] w-[18px]">
