@@ -12,7 +12,7 @@ const PrivetRoute = ({ children }) => {
     if (user) {
         return children;
     }
-    return <Navigate state={ip.pathname} to='/SignUp'></Navigate>
+    return <Navigate state={ip.pathname} to='/'></Navigate>
 
 
 };

@@ -7,6 +7,7 @@ import SignUp from "../Log/SignUp";
 import ForgotPassword from "../Log/ForgotPassword";
 import Dashboard from "../Components/Dashboard/Dashboard";
 import Profile from "../Components/Profile/Profile";
+import PrivetRoute from "./PrivetRoutes";
 
 
 const Routes = createBrowserRouter([
@@ -21,11 +22,11 @@ const Routes = createBrowserRouter([
             },
             {
               path: "/dashboard",
-              element: <Dashboard/> ,
+              element: <PrivetRoute><Dashboard/></PrivetRoute> ,
             },
             {
               path: "/profile",
-              element: <Profile/> ,
+              element: <PrivetRoute><Profile/></PrivetRoute> ,
             },
             {
               path: "/login",

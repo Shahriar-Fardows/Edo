@@ -1,8 +1,11 @@
+import ProfileInfo from "./ProfileInfo";
+
 
 const Profile = () => {
+   
     return (
         <div>
-            
+           <ProfileInfo/>
         </div>
     );
 };
