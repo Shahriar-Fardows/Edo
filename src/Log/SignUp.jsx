@@ -11,9 +11,7 @@ const SignUp = () => {
     const { user, createUser , google } = useAuthContext();
     console.log(user, 'user');
 
-    // if (user?.email) {
-    //     return <Navigate to="/profile" />;
-    // }
+   
 
     const showPassword = () => {
         setVisible(!visible);
@@ -38,7 +36,6 @@ const SignUp = () => {
         console.log(e);
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email, password);
         if(password.length < 6 || password.length > 32){
             Swal.fire({
                 title: 'Password has to be between 6 and 32 characters!',
@@ -54,11 +51,10 @@ const SignUp = () => {
                     icon: 'success',
                     confirmButtonText: 'Cool'
                 })
-                
             })
             .catch(() => {
                 Swal.fire({
-                    title: 'server error try agin!',
+                    title: ' try agin!',
                     text: '',
                     icon: 'error',
                     confirmButtonText: 'Try again'
