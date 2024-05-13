@@ -1,5 +1,4 @@
 import ProfileInfo from "./ProfileInfo";
-import UpdateProfile from "./UpdateProfile";
 
 
 const Profile = () => {
@@ -7,7 +6,6 @@ const Profile = () => {
     return (
         <div>
            <ProfileInfo/>
-           <UpdateProfile/>
         </div>
     );
 };
