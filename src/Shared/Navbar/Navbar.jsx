@@ -8,7 +8,6 @@ const Navbar = () => {
     const [isToggleOpen, setIsToggleOpen] = useState(false);
 
     const { user, LogOut } = useAuthContext();
-    console.log(user, 'user');
     const navLinks = <>
 
         <li role="none" className="flex items-stretch">
