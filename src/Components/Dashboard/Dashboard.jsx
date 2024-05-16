@@ -1,7 +1,8 @@
-import { FaWallet , FaMoneyBillWave} from "react-icons/fa";
+import { FaWallet, FaMoneyBillWave } from "react-icons/fa";
 import { BsPostcardHeartFill } from "react-icons/bs";
 import { TbLibraryPlus } from "react-icons/tb";
 import { NavLink } from "react-router-dom";
+import ActivePost from "./Post/ActivePost";
 
 
 const Dashboard = () => {
@@ -12,7 +13,7 @@ const Dashboard = () => {
                 <NavLink to="/dashboard/post" className="inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded bg-sky-400 px-5 text-sm font-medium tracking-wide text-white shadow-md shadow-sky-200 transition duration-300 hover:bg-sky-500 hover:shadow-sm hover:shadow-sky-200 focus:bg-sky-400 focus:shadow-sm focus:shadow-sky-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-sky-300 disabled:bg-sky-300 disabled:shadow-none">
                     <TbLibraryPlus className="text-[2rem]" />
                     <h1>Post</h1>
-               
+
                 </NavLink>
                 <NavLink to="/dashboard/recharge" className="inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded bg-sky-400 px-5 text-sm font-medium tracking-wide text-white shadow-md shadow-sky-200 transition duration-300 hover:bg-sky-500 hover:shadow-sm hover:shadow-sky-200 focus:bg-sky-400 focus:shadow-sm focus:shadow-sky-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-sky-300 disabled:bg-sky-300 disabled:shadow-none">
                     <FaMoneyBillWave className="text-[2rem]" />
@@ -36,7 +37,10 @@ const Dashboard = () => {
                     </div>
                 </div>
             </section>
-
+            <div>
+                <h1 className="text-3xl my-5">Active Post</h1>
+                <ActivePost />
+            </div>
         </div>
     );
 };
