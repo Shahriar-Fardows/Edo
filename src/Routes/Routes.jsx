@@ -8,6 +8,7 @@ import ForgotPassword from "../Log/ForgotPassword";
 import Profile from "../Components/Profile/Profile";
 import PrivetRoute from "./PrivetRoutes";
 import Dashboard from "../Components/Dashboard/Dashboard";
+import Admin from "../Admin/Admin";
 
 const Routes = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const Routes = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
+      },   
+      {
+        path: "/web-admin",
+        element: <Admin/>
       },   
       {
         path: "/profile",
