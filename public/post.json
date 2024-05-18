@@ -1,0 +1,823 @@
+[
+    {
+        "job_id": 1,
+        "company": "Tech Innovators Inc.",
+        "title": "Software Engineer",
+        "description": "Develop and maintain software applications. Collaborate with cross-functional teams to define, design, and ship new features.",
+        "about_job": "We are looking for a skilled software engineer with a passion for developing innovative programs. You'll be working in a dynamic environment with opportunities for growth.",
+        "responsibilities": [
+            "Design, develop, and test software solutions.",
+            "Collaborate with product managers and engineers to translate requirements into high-quality code.",
+            "Troubleshoot and debug software applications as needed."
+        ],
+        "basic_qualifications": [
+            "Bachelor's degree in Computer Science or related field.",
+            "Proficiency in programming languages such as Java, C++, or Python.",
+            "Strong problem-solving and analytical skills."
+        ],
+        "experience_days": 730,
+        "country": "United States",
+        "city": "San Francisco"
+    },
+    {
+        "job_id": 40,
+        "company": "Tech Innovators Inc.",
+        "title": "Software Engineer",
+        "description": "Develop and maintain software applications. Collaborate with cross-functional teams to define, design, and ship new features.",
+        "about_job": "We are looking for a skilled software engineer with a passion for developing innovative programs. You'll be working in a dynamic environment with opportunities for growth.",
+        "responsibilities": [
+            "Design, develop, and test software solutions.",
+            "Collaborate with product managers and engineers to translate requirements into high-quality code.",
+            "Troubleshoot and debug software applications as needed."
+        ],
+        "basic_qualifications": [
+            "Bachelor's degree in Computer Science or related field.",
+            "Proficiency in programming languages such as Java, C++, or Python.",
+            "Strong problem-solving and analytical skills."
+        ],
+        "experience_days": 730,
+        "country": "United States",
+        "city": "San Francisco"
+    },
+    {
+        "job_id": 41,
+        "company": "Tech Innovators Inc.",
+        "title": "Software Engineer",
+        "description": "Develop and maintain software applications. Collaborate with cross-functional teams to define, design, and ship new features.",
+        "about_job": "We are looking for a skilled software engineer with a passion for developing innovative programs. You'll be working in a dynamic environment with opportunities for growth.",
+        "responsibilities": [
+            "Design, develop, and test software solutions.",
+            "Collaborate with product managers and engineers to translate requirements into high-quality code.",
+            "Troubleshoot and debug software applications as needed."
+        ],
+        "basic_qualifications": [
+            "Bachelor's degree in Computer Science or related field.",
+            "Proficiency in programming languages such as Java, C++, or Python.",
+            "Strong problem-solving and analytical skills."
+        ],
+        "experience_days": 730,
+        "country": "United States",
+        "city": "San Francisco"
+    },
+    {
+        "job_id": 2,
+        "company": "HealthPlus",
+        "title": "Data Scientist",
+        "description": "Analyze large amounts of data to find patterns and trends. Build predictive models to support healthcare decisions.",
+        "about_job": "Join our team as a data scientist to help us harness the power of data to improve patient outcomes. We value innovative and analytical thinkers.",
+        "responsibilities": [
+            "Collect, clean, and analyze healthcare data.",
+            "Develop machine learning models for predictive analytics.",
+            "Communicate findings to stakeholders and contribute to data-driven decision-making."
+        ],
+        "basic_qualifications": [
+            "Master's degree in Statistics, Computer Science, or related field.",
+            "Proficiency in programming languages such as R or Python.",
+            "Experience with statistical analysis and machine learning techniques."
+        ],
+        "experience_days": 1095,
+        "country": "Canada",
+        "city": "Toronto"
+    },
+    {
+        "job_id": 3,
+        "company": "MediCare Inc.",
+        "title": "Nurse Practitioner",
+        "description": "Provide advanced nursing care in a clinical setting. Work closely with physicians and other healthcare professionals.",
+        "about_job": "We seek a dedicated nurse practitioner to join our healthcare team. You will be responsible for patient care and clinical management.",
+        "responsibilities": [
+            "Conduct patient assessments and develop care plans.",
+            "Administer medications and treatments as prescribed.",
+            "Collaborate with interdisciplinary team members to ensure comprehensive patient care."
+        ],
+        "basic_qualifications": [
+            "Master's degree in Nursing.",
+            "Valid Nurse Practitioner license.",
+            "Clinical experience in a healthcare setting."
+        ],
+        "experience_days": 1460,
+        "country": "Australia",
+        "city": "Sydney"
+    },
+    {
+        "job_id": 4,
+        "company": "FinTech Solutions",
+        "title": "Financial Analyst",
+        "description": "Conduct financial analysis and provide insights to support business decisions. Prepare financial reports and forecasts.",
+        "about_job": "As a financial analyst, you will be a key part of our team, analyzing financial data and helping guide our strategic planning.",
+        "responsibilities": [
+            "Analyze financial data and market trends.",
+            "Prepare financial reports and forecasts.",
+            "Provide insights and recommendations to support strategic decision-making."
+        ],
+        "basic_qualifications": [
+            "Bachelor's degree in Finance, Accounting, or related field.",
+            "Strong analytical and quantitative skills.",
+            "Proficiency in financial modeling and data analysis tools."
+        ],
+        "experience_days": 1095,
+        "country": "United Kingdom",
+        "city": "London"
+    },
+    {
+        "job_id": 5,
+        "company": "EcoWorld",
+        "title": "Environmental Consultant",
+        "description": "Advise clients on environmental policies and practices. Conduct environmental impact assessments.",
+        "about_job": "Join our team to help clients navigate environmental regulations and promote sustainable practices. We're looking for passionate environmentalists.",
+        "responsibilities": [
+            "Assess environmental risks and develop mitigation strategies.",
+            "Conduct environmental impact assessments for projects.",
+            "Provide guidance on regulatory compliance and sustainability initiatives."
+        ],
+        "basic_qualifications": [
+            "Bachelor's degree in Environmental Science, Engineering, or related field.",
+            "Experience in environmental consulting or related field.",
+            "Knowledge of environmental regulations and policies."
+        ],
+        "experience_days": 730,
+        "country": "Germany",
+        "city": "Berlin"
+    },
+    {
+        "job_id": 6,
+        "company": "DigitalWorks",
+        "title": "UX Designer",
+        "description": "Design user interfaces and user experiences for web and mobile applications. Collaborate with product managers and developers.",
+        "about_job": "We are seeking a creative UX designer to create intuitive and engaging user experiences. You'll work in a collaborative and innovative environment.",
+        "responsibilities": [
+            "Create wireframes, mockups, and prototypes for digital products.",
+            "Conduct user research and usability testing.",
+            "Collaborate with cross-functional teams to iterate and improve designs."
+        ],
+        "basic_qualifications": [
+            "Bachelor's degree in Design, Human-Computer Interaction, or related field.",
+            "Proficiency in design tools such as Sketch, Adobe XD, or Figma.",
+            "Strong portfolio showcasing UX/UI design projects."
+        ],
+        "experience_days": 730,
+        "country": "Netherlands",
+        "city": "Amsterdam"
+    },
+    {
+        "job_id": 7,
+        "company": "AutoMotive",
+        "title": "Mechanical Engineer",
+        "description": "Design and develop mechanical systems and products. Conduct tests and simulations to ensure product quality.",
+        "about_job": "As a mechanical engineer, you'll be at the forefront of designing cutting-edge automotive technologies. Join our team for a challenging and rewarding career.",
+        "responsibilities": [
+            "Design and develop mechanical components and systems.",
+            "Conduct simulations and tests to evaluate product performance.",
+            "Collaborate with cross-functional teams to ensure design integrity and manufacturability."
+        ],
+        "basic_qualifications": [
+            "Bachelor's degree in Mechanical Engineering or related field.",
+            "Proficiency in CAD software such as SolidWorks or AutoCAD.",
+            "Experience with engineering analysis and simulation tools."
+        ],
+        "experience_days": 1095,
+        "country": "Japan",
+        "city": "Tokyo"
+    },
+    {
+        "job_id": 8,
+        "company": "CyberSecure",
+        "title": "Cybersecurity Analyst",
+        "description": "Monitor and protect organization's networks and systems. Respond to security incidents and conduct risk assessments.",
+        "about_job": "We are looking for a detail-oriented cybersecurity analyst to join our security team. You will play a crucial role in safeguarding our digital assets.",
+        "responsibilities": [
+            "Monitor network traffic for security threats and vulnerabilities.",
+            "Investigate security incidents and breaches.",
+            "Conduct security assessments and audits to identify risks and vulnerabilities."
+        ],
+        "basic_qualifications": [
+            "Bachelor's degree in Mechanical Engineering or related field.",
+            "Proficiency in CAD software such as SolidWorks or AutoCAD.",
+            "Experience with engineering analysis and simulation tools."
+        ],
+        "experience_days": 1095,
+        "country": "Japan",
+        "city": "Tokyo"
+    },
+        {
+            "job_id": 9,
+            "company": "LogiTrans",
+            "title": "Logistics Manager",
+            "description": "Oversee the supply chain operations. Coordinate logistics and manage inventory.",
+            "about_job": "Join our logistics team to manage and streamline our supply chain operations. We seek a problem-solver with excellent organizational skills.",
+            "responsibilities": [
+                "Optimize logistics processes to improve efficiency and reduce costs.",
+                "Manage inventory levels and ensure timely delivery of goods.",
+                "Coordinate with suppliers, carriers, and warehouse teams to meet customer demands."
+            ],
+            "basic_qualifications": [
+                "Bachelor's degree in Supply Chain Management, Logistics, or related field.",
+                "Experience in logistics or supply chain management.",
+                "Strong analytical and problem-solving skills."
+            ],
+            "experience_days": 1825,
+            "country": "Brazil",
+            "city": "São Paulo"
+        },
+        {
+            "job_id": 10,
+            "company": "Green Energy",
+            "title": "Solar Technician",
+            "description": "Install and maintain solar panels and systems. Conduct site assessments and troubleshoot issues.",
+            "about_job": "As a solar technician, you will help us promote sustainable energy solutions. We are looking for hands-on technicians passionate about renewable energy.",
+            "responsibilities": [
+                "Install and maintain solar energy systems, including panels, inverters, and mounting hardware.",
+                "Perform site assessments to determine optimal placement of solar panels.",
+                "Troubleshoot and repair solar energy systems as needed."
+            ],
+            "basic_qualifications": [
+                "High school diploma or equivalent.",
+                "Certification in solar energy installation or related field.",
+                "Experience in solar panel installation and maintenance."
+            ],
+            "experience_days": 730,
+            "country": "Spain",
+            "city": "Madrid"
+        },
+        {
+            "job_id": 11,
+            "company": "AgriTech",
+            "title": "Agronomist",
+            "description": "Research and develop crop production methods. Provide guidance on soil management and sustainable farming practices.",
+            "about_job": "We seek an agronomist to join our team and help advance agricultural innovation. Your expertise will be crucial in improving crop yields and sustainability.",
+            "responsibilities": [
+                "Research and develop innovative crop production techniques.",
+                "Provide recommendations on soil management and crop rotation.",
+                "Collaborate with farmers and agricultural organizations to promote sustainable farming practices."
+            ],
+            "basic_qualifications": [
+                "Bachelor's degree in Agronomy, Crop Science, or related field.",
+                "Experience in agricultural research or extension services.",
+                "Knowledge of plant physiology and agronomic principles."
+            ],
+            "experience_days": 1095,
+            "country": "Argentina",
+            "city": "Buenos Aires"
+        },
+        {
+            "job_id": 12,
+            "company": "EduTech",
+            "title": "Curriculum Developer",
+            "description": "Design and develop educational programs and materials. Collaborate with educators to create effective learning experiences.",
+            "about_job": "As a curriculum developer, you will be instrumental in shaping the future of education. We are looking for creative and knowledgeable individuals.",
+            "responsibilities": [
+                "Design and develop curriculum materials, including lesson plans, assessments, and teaching resources.",
+                "Collaborate with subject matter experts and educators to ensure curriculum alignment with learning objectives.",
+                "Evaluate and revise curriculum materials based on feedback and assessment data."
+            ],
+            "basic_qualifications": [
+                "Bachelor's degree in Education, Instructional Design, or related field.",
+                "Experience in curriculum development or instructional design.",
+                "Knowledge of pedagogical principles and educational technology tools."
+            ],
+            "experience_days": 1460,
+            "country": "India",
+            "city": "Bangalore"
+        },
+        {
+            "job_id": 13,
+            "company": "BuildIt",
+            "title": "Civil Engineer",
+            "description": "Design and oversee construction projects. Ensure compliance with regulations and safety standards.",
+            "about_job": "Join our engineering team to work on exciting construction projects. We are looking for experienced civil engineers with a passion for building.",
+            "responsibilities": [
+                "Design and oversee construction projects, including roads, bridges, and buildings.",
+                "Ensure compliance with building codes, regulations, and safety standards.",
+                "Collaborate with architects, contractors, and government agencies to coordinate project execution."
+            ],
+            "basic_qualifications": [
+                "Bachelor's degree in Civil Engineering or related field.",
+                "Professional Engineer (PE) license preferred.",
+                "Experience in civil engineering design and project management."
+            ],
+            "experience_days": 1825,
+            "country": "UAE",
+            "city": "Dubai"
+        },
+        {
+            "job_id": 14,
+            "company": "BioHealth",
+            "title": "Biochemist",
+            "description": "Conduct research on biological processes and chemical reactions. Develop new products and technologies.",
+            "about_job": "As a biochemist at BioHealth, you'll be at the forefront of scientific discovery. We value innovative thinkers dedicated to advancing health and science.",
+            "responsibilities": [
+                "Design and conduct experiments to study biochemical processes.",
+                "Analyze experimental data and interpret results.",
+                "Develop new products and technologies based on research findings."
+            ],
+            "basic_qualifications": [
+                "PhD in Biochemistry, Chemistry, or related field.",
+                "Experience in biochemical research and laboratory techniques.",
+                "Strong analytical and problem-solving skills."
+            ],
+            "experience_days": 1460,
+            "country": "Switzerland",
+            "city": "Zurich"
+        },
+        {
+            "job_id": 15,
+            "company": "TravelCo",
+            "title": "Travel Agent",
+            "description": "Plan and sell travel itineraries and packages. Provide customer support and travel advice.",
+            "about_job": "We are looking for a travel enthusiast to join our team as a travel agent. Help clients create memorable travel experiences around the world.",
+            "responsibilities": [
+                "Plan and book travel arrangements, including flights, accommodations, and activities.",
+                "Provide personalized travel advice and recommendations to clients.",
+                "Handle customer inquiries and resolve issues related to travel bookings."
+            ],
+            "basic_qualifications": [
+                "High school diploma or equivalent.",
+                "Experience in travel planning or customer service.",
+                "Knowledge of travel destinations, airlines, and booking platforms."
+            ],
+            "experience_days": 730,
+            "country": "New Zealand",
+            "city": "Auckland"
+        },
+        {
+            "job_id": 16,
+            "company": "TravelCo",
+            "title": "Travel Agent",
+            "description": "Plan and sell travel itineraries and packages. Provide customer support and travel advice.",
+            "about_job": "We are looking for a travel enthusiast to join our team as a travel agent. Help clients create memorable travel experiences around the world.",
+            "responsibilities": [
+                "Plan and book travel arrangements, including flights, accommodations, and activities.",
+                "Provide personalized travel advice and recommendations to clients.",
+                "Handle customer inquiries and resolve issues related to travel bookings."
+            ],
+            "basic_qualifications": [
+                "High school diploma or equivalent.",
+                "Experience in travel planning or customer service.",
+                "Knowledge of travel destinations, airlines, and booking platforms."
+            ],
+            "experience_days": 730,
+            "country": "New Zealand",
+            "city": "Auckland"
+        },
+        
+            {
+                "job_id": 17,
+                "company": "MarketGurus",
+                "title": "Marketing Specialist",
+                "description": "Develop and execute marketing strategies. Analyze market trends and customer data.",
+                "about_job": "As a marketing specialist, you will help shape our brand and drive business growth. We are looking for strategic thinkers with a creative edge.",
+                "responsibilities": [
+                    "Develop marketing strategies to promote products or services.",
+                    "Conduct market research and analyze consumer behavior.",
+                    "Create marketing materials and campaigns, such as advertisements and social media content."
+                ],
+                "basic_qualifications": [
+                    "Bachelor's degree in Marketing, Business Administration, or related field.",
+                    "Experience in marketing or related roles.",
+                    "Strong communication and analytical skills."
+                ],
+                "experience_days": 730,
+                "country": "Singapore",
+                "city": "Singapore"
+            },
+            {
+                "job_id": 18,
+                "company": "Foodies",
+                "title": "Chef",
+                "description": "Prepare and cook high-quality dishes. Design menus and manage kitchen staff.",
+                "about_job": "We seek an experienced chef to join our culinary team. Bring your creativity and culinary skills to create exceptional dining experiences.",
+                "responsibilities": [
+                    "Plan and prepare menus, considering factors such as seasonality and dietary restrictions.",
+                    "Supervise kitchen staff and coordinate food preparation activities.",
+                    "Maintain high standards of food quality, hygiene, and safety."
+                ],
+                "basic_qualifications": [
+                    "Culinary degree or equivalent certification.",
+                    "Proven experience as a chef in a high-volume kitchen.",
+                    "Creativity and passion for food."
+                ],
+                "experience_days": 1825,
+                "country": "Italy",
+                "city": "Rome"
+            },
+            {
+                "job_id": 19,
+                "company": "AeroDynamics",
+                "title": "Aerospace Engineer",
+                "description": "Design and test aircraft and spacecraft. Ensure compliance with engineering principles and safety regulations.",
+                "about_job": "Join AeroDynamics as an aerospace engineer and work on groundbreaking aerospace projects. We value innovative engineers dedicated to excellence.",
+                "responsibilities": [
+                    "Design and develop aerospace components and systems, such as airframes, propulsion systems, and avionics.",
+                    "Conduct tests and simulations to evaluate aerospace designs and performance.",
+                    "Ensure compliance with regulatory requirements and safety standards."
+                ],
+                "basic_qualifications": [
+                    "Bachelor's degree in Aerospace Engineering or related field.",
+                    "Experience in aerospace design, analysis, or testing.",
+                    "Knowledge of aerospace regulations and industry standards."
+                ],
+                "experience_days": 1460,
+                "country": "France",
+                "city": "Toulouse"
+            },
+            {
+                "job_id": 20,
+                "company": "Innovative Solutions",
+                "title": "IT Support Specialist",
+                "description": "Provide technical support and troubleshooting. Manage IT infrastructure and software updates.",
+                "about_job": "We are looking for an IT support specialist to ensure smooth IT operations. Your role will be critical in maintaining our technology systems.",
+                "responsibilities": [
+                    "Provide technical support to end-users, troubleshooting hardware and software issues.",
+                    "Manage IT infrastructure, including servers, networks, and devices.",
+                    "Install, configure, and maintain software applications and systems."
+                ],
+                "basic_qualifications": [
+                    "Associate degree or equivalent certification in Information Technology or related field.",
+                    "Experience in technical support or IT helpdesk role.",
+                    "Knowledge of operating systems, network protocols, and troubleshooting techniques."
+                ],
+                "experience_days": 730,
+                "country": "South Africa",
+                "city": "Johannesburg"
+            },
+            {
+                "job_id": 21,
+                "company": "Tech Innovators Inc.",
+                "title": "Software Engineer",
+                "description": "Develop and maintain software applications. Collaborate with cross-functional teams to define, design, and ship new features.",
+                "about_job": "We are looking for a skilled software engineer with a passion for developing innovative programs. You'll be working in a dynamic environment with opportunities for growth.",
+                "responsibilities": [
+                    "Design, develop, and test software solutions.",
+                    "Collaborate with product managers and engineers to translate requirements into high-quality code.",
+                    "Troubleshoot and debug software applications as needed."
+                ],
+                "basic_qualifications": [
+                    "Bachelor's degree in Computer Science or related field.",
+                    "Proficiency in programming languages such as Java, C++, or Python.",
+                    "Strong problem-solving and analytical skills."
+                ],
+                "experience_days": 730,
+                "country": "United States",
+                "city": "San Francisco"
+            },
+            {
+                "job_id": 22,
+                "company": "HealthPlus",
+                "title": "Data Scientist",
+                "description": "Analyze large amounts of data to find patterns and trends. Build predictive models to support healthcare decisions.",
+                "about_job": "Join our team as a data scientist to help us harness the power of data to improve patient outcomes. We value innovative and analytical thinkers.",
+                "responsibilities": [
+                    "Collect, clean, and analyze healthcare data.",
+                    "Develop machine learning models for predictive analytics.",
+                    "Communicate findings to stakeholders and contribute to data-driven decision-making."
+                ],
+                "basic_qualifications": [
+                    "Master's degree in Statistics, Computer Science, or related field.",
+                    "Proficiency in programming languages such as R or Python.",
+                    "Experience with statistical analysis and machine learning techniques."
+                ],
+                "experience_days": 1095,
+                "country": "Canada",
+                "city": "Toronto"
+            },
+            {
+                "job_id": 23,
+                "company": "MediCare Inc.",
+                "title": "Nurse Practitioner",
+                "description": "Provide advanced nursing care in a clinical setting. Work closely with physicians and other healthcare professionals.",
+                "about_job": "We seek a dedicated nurse practitioner to join our healthcare team. You will be responsible for patient care and clinical management.",
+                "responsibilities": [
+                    "Conduct patient assessments and develop care plans.",
+                    "Administer medications and treatments as prescribed.",
+                    "Collaborate with interdisciplinary team members to ensure comprehensive patient care."
+                ],
+                "basic_qualifications": [
+                    "Master's degree in Nursing.",
+                    "Valid Nurse Practitioner license.",
+                    "Clinical experience in a healthcare setting."
+                ],
+                "experience_days": 1460,
+                "country": "Australia",
+                "city": "Sydney"
+            },
+            {
+                "job_id": 24,
+                "company": "FinTech Solutions",
+                "title": "Financial Analyst",
+                "description": "Conduct financial analysis and provide insights to support business decisions. Prepare financial reports and forecasts.",
+                "about_job": "As a financial analyst, you will be a key part of our team, analyzing financial data and helping guide our strategic planning.",
+                "responsibilities": [
+                    "Analyze financial data and market trends.",
+                    "Prepare financial reports and forecasts.",
+                    "Provide insights and recommendations to support strategic decision-making."
+                ],
+                "basic_qualifications": [
+                    "Bachelor's degree in Finance, Accounting, or related field.",
+                    "Strong analytical and quantitative skills.",
+                    "Proficiency in financial modeling and data analysis tools."
+                ],
+                "experience_days": 1095,
+                "country": "United Kingdom",
+                "city": "London"
+            },
+            {
+                "job_id": 25,
+                "company": "EcoWorld",
+                "title": "Environmental Consultant",
+                "description": "Advise clients on environmental policies and practices. Conduct environmental impact assessments.",
+                "about_job": "Join our team to help clients navigate environmental regulations and promote sustainable practices. We're looking for passionate environmentalists.",
+                "responsibilities": [
+                    "Assess environmental risks and develop mitigation strategies.",
+                    "Conduct environmental impact assessments for projects.",
+                    "Provide guidance on regulatory compliance and sustainability initiatives."
+                ],
+                "basic_qualifications": [
+                    "Bachelor's degree in Environmental Science, Engineering, or related field.",
+                    "Experience in environmental consulting or related field.",
+                    "Knowledge of environmental regulations and policies."
+                ],
+                "experience_days": 730,
+                "country": "Germany",
+                "city": "Berlin"
+            },
+            {
+                "job_id": 26,
+                "company": "DigitalWorks",
+                "title": "UX Designer",
+                "description": "Design user interfaces and user experiences for web and mobile applications. Collaborate with product managers and developers.",
+                "about_job": "We are seeking a creative UX designer to create intuitive and engaging user experiences. You'll work in a collaborative and innovative environment.",
+                "responsibilities": [
+                    "Create wireframes, mockups, and prototypes for digital products.",
+                    "Conduct user research and usability testing.",
+                    "Collaborate with cross-functional teams to iterate and improve designs."
+                ],
+                "basic_qualifications": [
+                    "Bachelor's degree in Design, Human-Computer Interaction, or related field.",
+                    "Proficiency in design tools such as Sketch, Adobe XD, or Figma.",
+                    "Strong portfolio showcasing UX/UI design projects."
+                ],
+                "experience_days": 730,
+                "country": "Netherlands",
+                "city": "Amsterdam"
+            },
+            {
+                "job_id": 27,
+                "company": "AutoMotive",
+                "title": "Mechanical Engineer",
+                "description": "Design and develop mechanical systems and products. Conduct tests and simulations to ensure product quality.",
+                "about_job": "As a mechanical engineer, you'll be at the forefront of designing cutting-edge automotive technologies. Join our team for a challenging and rewarding career.",
+                "responsibilities": [
+                    "Design and develop mechanical components and systems.",
+                    "Conduct simulations and tests to evaluate product performance.",
+                    "Collaborate with cross-functional teams to ensure design integrity and manufacturability."
+                ],
+                "basic_qualifications": [
+                    "Bachelor's degree in Mechanical Engineering or related field.",
+                    "Proficiency in CAD software such as SolidWorks or AutoCAD.",
+                    "Experience with engineering analysis and simulation tools."
+                ],
+                "experience_days": 1095,
+                "country": "Japan",
+                "city": "Tokyo"
+            }, {
+                "job_id": 28,
+                "company": "CyberSecure",
+                "title": "Cybersecurity Analyst",
+                "description": "Monitor and protect organization's networks and systems. Respond to security incidents and conduct risk assessments.",
+                "about_job": "We are looking for a detail-oriented cybersecurity analyst to join our security team. You will play a crucial role in safeguarding our digital assets.",
+                "responsibilities": [
+                    "Monitor network traffic for security threats and vulnerabilities.",
+                    "Investigate security incidents and breaches.",
+                    "Conduct security assessments and audits to identify risks and vulnerabilities."
+                ],
+                "basic_qualifications": [
+                    "Bachelor's degree in Computer Science, Information Security, or related field.",
+                    "Experience in cybersecurity operations or related role.",
+                    "Knowledge of network protocols, security tools, and best practices."
+                ],
+                "experience_days": 1095,
+                "country": "Japan",
+                "city": "Tokyo"
+            },
+            {
+                "job_id": 29,
+                "company": "LogiTrans",
+                "title": "Logistics Manager",
+                "description": "Oversee the supply chain operations. Coordinate logistics and manage inventory.",
+                "about_job": "Join our logistics team to manage and streamline our supply chain operations. We seek a problem-solver with excellent organizational skills.",
+                "responsibilities": [
+                    "Optimize logistics processes to improve efficiency and reduce costs.",
+                    "Manage inventory levels and ensure timely delivery of goods.",
+                    "Coordinate with suppliers, carriers, and warehouse teams to meet customer demands."
+                ],
+                "basic_qualifications": [
+                    "Bachelor's degree in Supply Chain Management, Logistics, or related field.",
+                    "Experience in logistics or supply chain management.",
+                    "Strong analytical and problem-solving skills."
+                ],
+                "experience_days": 1825,
+                "country": "Brazil",
+                "city": "São Paulo"
+            },
+            {
+                "job_id": 30,
+                "company": "Green Energy",
+                "title": "Solar Technician",
+                "description": "Install and maintain solar panels and systems. Conduct site assessments and troubleshoot issues.",
+                "about_job": "As a solar technician, you will help us promote sustainable energy solutions. We are looking for hands-on technicians passionate about renewable energy.",
+                "responsibilities": [
+                    "Install and maintain solar energy systems, including panels, inverters, and mounting hardware.",
+                    "Perform site assessments to determine optimal placement of solar panels.",
+                    "Troubleshoot and repair solar energy systems as needed."
+                ],
+                "basic_qualifications": [
+                    "High school diploma or equivalent.",
+                    "Certification in solar energy installation or related field.",
+                    "Experience in solar panel installation and maintenance."
+                ],
+                "experience_days": 730,
+                "country": "Spain",
+                "city": "Madrid"
+            },
+            {
+                "job_id": 31,
+                "company": "AgriTech",
+                "title": "Agronomist",
+                "description": "Research and develop crop production methods. Provide guidance on soil management and sustainable farming practices.",
+                "about_job": "We seek an agronomist to join our team and help advance agricultural innovation. Your expertise will be crucial in improving crop yields and sustainability.",
+                "responsibilities": [
+                    "Research and develop innovative crop production techniques.",
+                    "Provide recommendations on soil management and crop rotation.",
+                    "Collaborate with farmers and agricultural organizations to promote sustainable farming practices."
+                ],
+                "basic_qualifications": [
+                    "Bachelor's degree in Agronomy, Crop Science, or related field.",
+                    "Experience in agricultural research or extension services.",
+                    "Knowledge of plant physiology and agronomic principles."
+                ],
+                "experience_days": 1095,
+                "country": "Argentina",
+                "city": "Buenos Aires"
+            },
+            {
+                "job_id": 32,
+                "company": "EduTech",
+                "title": "Curriculum Developer",
+                "description": "Design and develop educational programs and materials. Collaborate with educators to create effective learning experiences.",
+                "about_job": "As a curriculum developer, you will be instrumental in shaping the future of education. We are looking for creative and knowledgeable individuals.",
+                "responsibilities": [
+                    "Design and develop curriculum materials, including lesson plans, assessments, and teaching resources.",
+                    "Collaborate with subject matter experts and educators to ensure curriculum alignment with learning objectives.",
+                    "Evaluate and revise curriculum materials based on feedback and assessment data."
+                ],
+                "basic_qualifications": [
+                    "Bachelor's degree in Education, Instructional Design, or related field.",
+                    "Experience in curriculum development or instructional design.",
+                    "Knowledge of pedagogical principles and educational technology tools."
+                ],
+                "experience_days": 1460,
+                "country": "India",
+                "city": "Bangalore"
+            },
+            {
+                "job_id": 33,
+                "company": "BuildIt",
+                "title": "Civil Engineer",
+                "description": "Design and oversee construction projects. Ensure compliance with regulations and safety standards.",
+                "about_job": "Join our engineering team to work on exciting construction projects. We are looking for experienced civil engineers with a passion for building.",
+                "responsibilities": [
+                    "Design and oversee construction projects, including roads, bridges, and buildings.",
+                    "Ensure compliance with building codes, regulations, and safety standards.",
+                    "Collaborate with architects, contractors, and government agencies to coordinate project execution."
+                ],
+                "basic_qualifications": [
+                    "Bachelor's degree in Civil Engineering or related field.",
+                    "Professional Engineer (PE) license preferred.",
+                    "Experience in civil engineering design and project management."
+                ],
+                "experience_days": 1825,
+                "country": "UAE",
+                "city": "Dubai"
+            },
+            {
+                "job_id": 34,
+                "company": "BioHealth",
+                "title": "Biochemist",
+                "description": "Conduct research on biological processes and chemical reactions. Develop new products and technologies.",
+                "about_job": "As a biochemist at BioHealth, you'll be at the forefront of scientific discovery. We value innovative thinkers dedicated to advancing health and science.",
+                "responsibilities": [
+                    "Design and conduct experiments to study biochemical processes.",
+                    "Analyze experimental data and interpret results.",
+                    "Develop new products and technologies based on research findings."
+                ],
+                "basic_qualifications": [
+                    "PhD in Biochemistry, Chemistry, or related field.",
+                    "Experience in biochemical research and laboratory techniques.",
+                    "Strong analytical and problem-solving skills."
+                ],
+                "experience_days": 1460,
+                "country": "Switzerland",
+                "city": "Zurich"
+            },
+            {
+                "job_id": 35,
+                "company": "TravelCo",
+                "title": "Travel Agent",
+                "description": "Plan and sell travel itineraries and packages. Provide customer support and travel advice.",
+                "about_job": "We are looking for a travel enthusiast to join our team as a travel agent. Help clients create memorable travel experiences around the world.",
+                "responsibilities": [
+                    "Plan and book travel arrangements, including flights, accommodations, and activities.",
+                    "Provide personalized travel advice and recommendations to clients.",
+                    "Handle customer inquiries and resolve issues related to travel bookings."
+                ],
+                "basic_qualifications": [
+                    "High school diploma or equivalent.",
+                    "Experience in travel planning or customer service.",
+                    "Knowledge of travel destinations, airlines, and booking platforms."
+                ],
+                "experience_days": 730,
+                "country": "New Zealand",
+                "city": "Auckland"
+            },
+            {
+                "job_id": 36,
+                "company": "MarketGurus",
+                "title": "Marketing Specialist",
+                "description": "Develop and execute marketing strategies. Analyze market trends and customer data.",
+                "about_job": "As a marketing specialist, you will help shape our brand and drive business growth. We are looking for strategic thinkers with a creative edge.",
+                "responsibilities": [
+                    "Develop marketing strategies to promote products or services.",
+                    "Conduct market research and analyze consumer behavior.",
+                    "Create marketing materials and campaigns, such as advertisements and social media content."
+                ],  
+                "basic_qualifications": [
+                    "Bachelor's degree in Marketing, Business Administration, or related field.",
+                    "Experience in marketing or related roles.",
+                    "Strong communication and analytical skills."
+                ],
+                "experience_days": 730,
+                "country": "Singapore",
+                "city": "Singapore"
+            },
+            {
+                "job_id": 37,
+                "company": "Foodies",
+                "title": "Chef",
+                "description": "Prepare and cook high-quality dishes. Design menus and manage kitchen staff.",
+                "about_job": "We seek an experienced chef to join our culinary team. Bring your creativity and culinary skills to create exceptional dining experiences.",
+                "responsibilities": [
+                    "Plan and prepare menus, considering factors such as seasonality and dietary restrictions.",
+                    "Supervise kitchen staff and coordinate food preparation activities.",
+                    "Maintain high standards of food quality, hygiene, and safety."
+                ],
+                "basic_qualifications": [
+                    "Culinary degree or equivalent certification.",
+                    "Proven experience as a chef in a high-volume kitchen.",
+                    "Creativity and passion for food."
+                ],
+                "experience_days": 1825,
+                "country": "Italy",
+                "city": "Rome"
+            },
+            {
+                "job_id": 38,
+                "company": "AeroDynamics",
+                "title": "Aerospace Engineer",
+                "description": "Design and test aircraft and spacecraft. Ensure compliance with engineering principles and safety regulations.",
+                "about_job": "Join AeroDynamics as an aerospace engineer and work on groundbreaking aerospace projects. We value innovative engineers dedicated to excellence.",
+                "responsibilities": [
+                    "Design and develop aerospace components and systems, such as airframes, propulsion systems, and avionics.",
+                    "Conduct tests and simulations to evaluate aerospace designs and performance.",
+                    "Ensure compliance with regulatory requirements and safety standards."
+                ],
+                "basic_qualifications": [
+                    "Bachelor's degree in Aerospace Engineering or related field.",
+                    "Experience in aerospace design, analysis, or testing.",
+                    "Knowledge of aerospace regulations and industry standards."
+                ],
+                "experience_days": 1460,
+                "country": "France",
+                "city": "Toulouse"
+            },
+            {
+                "job_id": 39,
+                "company": "Innovative Solutions",
+                "title": "IT Support Specialist",
+                "description": "Provide technical support and troubleshooting. Manage IT infrastructure and software updates.",
+                "about_job": "We are looking for an IT support specialist to ensure smooth IT operations. Your role will be critical in maintaining our technology systems.",
+                "responsibilities": [
+                    "Provide technical support to end-users, troubleshooting hardware and software issues.",
+                    "Manage IT infrastructure, including servers, networks, and devices.",
+                    "Install, configure, and maintain software applications and systems."
+                ],
+                "basic_qualifications": [
+                    "Associate degree or equivalent certification in Information Technology or related field.",
+                    "Experience in technical support or IT helpdesk role.",
+                    "Knowledge of operating systems, network protocols, and troubleshooting techniques."
+                ],
+                "experience_days": 730,
+                "country": "South Africa",
+                "city": "Johannesburg"
+            }
+        ]
+        
