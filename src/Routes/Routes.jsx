@@ -10,6 +10,7 @@ import PrivetRoute from "./PrivetRoutes";
 import Dashboard from "../Components/Dashboard/Dashboard";
 import AdminLogin from "../Admin/AdminLogin/AdminLogin";
 import Admin from "../Admin/Admin";
+import AdminHome from "../Admin/AdminHome/AdminHome";
 
 const Routes = createBrowserRouter([
   {
@@ -20,19 +21,15 @@ const Routes = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-      },   
+      },
       {
         path: "/dashboard",
         element: <Dashboard />,
-      },   
+      },
       {
         path: "/web-admin",
         element: <AdminLogin />,
-      },   
-      {
-        path: "/web-admin/admin-dashboard",
-        element: <Admin />,
-      },   
+      },
       {
         path: "/profile",
         element: (
@@ -55,7 +52,17 @@ const Routes = createBrowserRouter([
       },
     ],
   },
- 
+  {
+    path: "/web-admin",
+    element: <Admin />,
+    children: [
+      {
+        path: "/web-admin/admin-home",
+        element: <>hi this </>,
+      },
+     
+    ],
+  },
 ]);
 
 export default Routes;
