@@ -11,6 +11,7 @@ import Dashboard from "../Components/Dashboard/Dashboard";
 import AdminLogin from "../Admin/AdminLogin/AdminLogin";
 import Admin from "../Admin/Admin";
 import CountryPosts from "../Home/CountryData/countryPosts/CountryPosts";
+import AdminHome from "../Admin/AdminHome/AdminHome";
 
 const Routes = createBrowserRouter([
   {
@@ -30,15 +31,11 @@ const Routes = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard />,
-      },   
+      }, 
       {
         path: "/web-admin",
-        element: <AdminLogin />,
-      },   
-      {
-        path: "/web-admin/admin-dashboard",
-        element: <Admin />,
-      },   
+        element: <AdminLogin/>
+      },    
       {
         path: "/profile",
         element: (
@@ -61,6 +58,16 @@ const Routes = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/web-admin/admin-dashboard",
+    element: <Admin />,
+    children: [
+      {
+        path: "/web-admin/admin-dashboard",
+        element: <AdminHome />,
+      },
+    ]
+  }
  
 ]);
 

@@ -36,7 +36,7 @@ const AdminLogin = () => {
             {/*  <!-- Body--> */}
             <div className="p-6">
                 <header className="mb-4 text-center">
-                    <h3 className="text-xl font-medium text-slate-700">Welcome Admin</h3>
+                    <h3 className="text-xl font-medium text-slate-700">Login Admin</h3>
                 </header>
                 <div className="flex flex-col space-y-8">
                     {/*      <!-- Input field --> */}
