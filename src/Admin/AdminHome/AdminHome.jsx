@@ -1,9 +1,8 @@
 
-
 const AdminHome = () => {
     return (
         <div>
-            home
+           <h1>Welcome to your dashboard admin </h1> 
         </div>
     );
 };
