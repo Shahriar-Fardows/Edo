@@ -12,6 +12,7 @@ import AdminLogin from "../Admin/AdminLogin/AdminLogin";
 import Admin from "../Admin/Admin";
 import CountryPosts from "../Home/CountryData/countryPosts/CountryPosts";
 import AdminHome from "../Admin/AdminHome/AdminHome";
+import AdminApi from "../Admin/AdminApi/AdminApi";
 
 const Routes = createBrowserRouter([
   {
@@ -59,12 +60,16 @@ const Routes = createBrowserRouter([
     ],
   },
   {
-    path: "/web-admin/admin-dashboard",
+    path: "/web-admin",
     element: <Admin />,
     children: [
       {
-        path: "/web-admin/admin-dashboard",
+        path: "admin-dashboard",
         element: <AdminHome />,
+      },
+      {
+        path: "api-update",
+        element: <AdminApi />,
       },
     ]
   }
