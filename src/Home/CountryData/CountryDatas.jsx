@@ -5,14 +5,14 @@ const CountryDatas = () => {
     const [postData, setPostData] = useState([]);
     const [selectedCountry, setSelectedCountry] = useState(""); // State to store selected country for filtering
 
-    useEffect(() => {
-        fetch("http://localhost:5000/country")
-            .then((response) => response.json())
-            .then((data) => {
-                console.log(data);
-                setPostData(data);
-            });
-    }, []);
+    // useEffect(() => {
+    //     fetch("http://localhost:5000/country")
+    //         .then((response) => response.json())
+    //         .then((data) => {
+    //             console.log(data);
+    //             setPostData(data);
+    //         });
+    // }, []);
 
 
     // Function to handle country filter
