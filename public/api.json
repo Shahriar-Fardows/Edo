@@ -1,0 +1,168 @@
+[
+    {
+        "name": "United States",
+        "cities": [
+            {
+                "name": "New York",
+                "subcities": ["Manhattan", "Brooklyn", "Queens"]
+            },
+            {
+                "name": "Los Angeles",
+                "subcities": ["Hollywood", "Beverly Hills", "Santa Monica"]
+            }
+        ]
+    },
+    {
+        "name": "United States",
+        "cities": [
+            {
+                "name": "New York",
+                "subcities": ["Manhattan", "Brooklyn", "Queens"]
+            },
+            {
+                "name": "Los Angeles",
+                "subcities": ["Hollywood", "Beverly Hills", "Santa Monica"]
+            }
+        ]
+    },
+    {
+        "name": "United States",
+        "cities": [
+            {
+                "name": "New York",
+                "subcities": ["Manhattan", "Brooklyn", "Queens"]
+            },
+            {
+                "name": "Los Angeles",
+                "subcities": ["Hollywood", "Beverly Hills", "Santa Monica"]
+            }
+        ]
+    },
+    {
+        "name": "Canada",
+        "cities": [
+            {
+                "name": "Toronto",
+                "subcities": ["North York", "Scarborough", "Etobicoke"]
+            },
+            {
+                "name": "Vancouver",
+                "subcities": ["Richmond", "Burnaby", "Surrey"]
+            }
+        ]
+    },
+    {
+        "name": "Australia",
+        "cities": [
+            {
+                "name": "Sydney",
+                "subcities": ["Parramatta", "Bondi", "Chatswood"]
+            },
+            {
+                "name": "Melbourne",
+                "subcities": ["St Kilda", "Fitzroy", "Richmond"]
+            }
+        ]
+    },
+    {
+        "name": "United Kingdom",
+        "cities": [
+            {
+                "name": "London",
+                "subcities": ["Westminster", "Camden", "Greenwich"]
+            },
+            {
+                "name": "Manchester",
+                "subcities": ["Salford", "Didsbury", "Rusholme"]
+            }
+        ]
+    },
+    {
+        "name": "Europe",
+        "cities": [
+            {
+                "name": "Paris",
+                "subcities": ["Montmartre", "Le Marais", "Latin Quarter"]
+            },
+            {
+                "name": "Berlin",
+                "subcities": ["Mitte", "Kreuzberg", "Prenzlauer Berg"]
+            }
+        ]
+    },
+    {
+        "name": "Asia",
+        "cities": [
+            {
+                "name": "Tokyo",
+                "subcities": ["Shibuya", "Shinjuku", "Akihabara"]
+            },
+            {
+                "name": "Beijing",
+                "subcities": ["Haidian", "Chaoyang", "Dongcheng"]
+            }
+        ]
+    },
+    {
+        "name": "Latin America",
+        "cities": [
+            {
+                "name": "Mexico City",
+                "subcities": ["Coyoacán", "Tlalpan", "Xochimilco"]
+            },
+            {
+                "name": "São Paulo",
+                "subcities": ["Pinheiros", "Moema", "Itaim Bibi"]
+            }
+        ]
+    },
+    {
+        "name": "Africa",
+        "cities": [
+            {
+                "name": "Cape Town",
+                "subcities": ["Sea Point", "Clifton", "Woodstock"]
+            },
+            {
+                "name": "Nairobi",
+                "subcities": ["Westlands", "Karen", "Langata"]
+            },
+            {
+                "name": "Lagos",
+                "subcities": ["Victoria Island", "Ikeja", "Lekki"]
+            },
+            {
+                "name": "Johannesburg",
+                "subcities": ["Sandton", "Rosebank", "Soweto"]
+            }
+            ,
+            {
+                "name": "Accra",
+                "subcities": ["Osu", "East Legon", "Airport"]
+            },
+            {
+                "name": "Kigali",
+                "subcities": ["Kacyiru", "Kimihurura", "Nyamirambo"]
+            },
+            {
+                "name": "Addis Ababa",
+                "subcities": ["Bole", "Kirkos", "Arada"]
+            },
+            {
+                "name": "Dar es Salaam",
+                "subcities": ["Masaki", "Mikocheni", "Kariakoo"]
+            },
+            {
+                "name": "Abuja",
+                "subcities": ["Maitama", "Wuse", "Garki"]
+            },
+            {
+                "name": "Kampala",
+                "subcities": ["Nakasero", "Kololo", "Ntinda"]
+            }
+
+            
+        ]
+    }
+   
+]

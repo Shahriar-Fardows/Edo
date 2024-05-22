@@ -11,7 +11,7 @@ const AdminNav = () => {
             <NavLink
                 to='/web-admin/admin-dashboard'
 
-                className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-emerald-50 hover:text-emerald-500 focus:bg-emerald-50 aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
+                className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-sky-50 hover:text-sky-500 focus:bg-sky-50 aria-[current=page]:bg-sky-50 aria-[current=page]:text-sky-500 "
             >
                 <div className="flex w-6 items-center self-center">
                     <svg
@@ -38,9 +38,10 @@ const AdminNav = () => {
         </li>
 
         <li className="px-3">
-            <a
+            <NavLink
+            to='api-update'
                 href="#"
-                className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-emerald-50 hover:text-emerald-500 focus:bg-emerald-50 aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
+                className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-sky-50 hover:text-sky-500 focus:bg-sky-50 aria-[current=page]:bg-sky-50 aria-[current=page]:text-sky-500 "
             >
                 <div className="flex w-6 items-center self-center">
                     <svg
@@ -61,14 +62,14 @@ const AdminNav = () => {
                     </svg>
                 </div>
                 <div className="flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm">
-                    All Users
+                     Update Api
                 </div>
-            </a>
+            </NavLink>
         </li>
         <li className="px-3">
             <a
                 href="#"
-                className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-emerald-50 hover:text-emerald-500 focus:bg-emerald-50 aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
+                className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-sky-50 hover:text-sky-500 focus:bg-sky-50 aria-[current=page]:bg-sky-50 aria-[current=page]:text-sky-500 "
             >
                 <div className="flex w-6 items-center self-center">
                     <svg
@@ -99,7 +100,7 @@ const AdminNav = () => {
         <li className="px-3">
             <a
                 href="#"
-                className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-emerald-50 hover:text-emerald-500 focus:bg-emerald-50 aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
+                className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-sky-50 hover:text-sky-500 focus:bg-sky-50 aria-[current=page]:bg-sky-50 aria-[current=page]:text-sky-500 "
             >
                 <div className="flex w-6 items-center self-center">
                     <svg
@@ -179,7 +180,7 @@ const AdminNav = () => {
                                 height="48"
                                 className="max-w-full rounded-full"
                             />
-                            <span className="absolute bottom-0 right-0 inline-flex items-center justify-center gap-1 rounded-full border-2 border-white bg-emerald-500 p-1 text-sm text-white">
+                            <span className="absolute bottom-0 right-0 inline-flex items-center justify-center gap-1 rounded-full border-2 border-white bg-sky-500 p-1 text-sm text-white">
                                 <span className="sr-only"> online </span>
                             </span>
                         </a>
@@ -206,7 +207,7 @@ const AdminNav = () => {
                 <footer className="border-t border-slate-200 p-3">
                     <NavLink
                         to='/web-admin'
-                        className="flex items-center gap-3 rounded p-3 text-slate-900 transition-colors hover:text-emerald-500 "
+                        className="flex items-center gap-3 rounded p-3 text-slate-900 transition-colors hover:text-sky-500 "
                     >
                         <div className="flex items-center self-center ">
                             <svg
