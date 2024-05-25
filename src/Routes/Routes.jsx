@@ -10,9 +10,10 @@ import PrivetRoute from "./PrivetRoutes";
 import Dashboard from "../Components/Dashboard/Dashboard";
 import AdminLogin from "../Admin/AdminLogin/AdminLogin";
 import Admin from "../Admin/Admin";
-import CountryPosts from "../Home/CountryData/countryPosts/CountryPosts";
 import AdminHome from "../Admin/AdminHome/AdminHome";
 import AdminApi from "../Admin/AdminApi/AdminApi";
+import SubCity from "../Home/CountryData/SubCity";
+import Post from "../Components/Dashboard/Post/Post";
 
 const Routes = createBrowserRouter([
   {
@@ -25,13 +26,20 @@ const Routes = createBrowserRouter([
         element: <Home />,
       },   
       {
-        path: "/allPost/:cityName",
-        element: <CountryPosts />,
-        // loader: ({params}) => fetch(`http://localhost:5000/allPost/${params.cityName}`),
+        path: "/:country/:city/:subcities",
+        element: <SubCity />,
+        loader: ({params})=> fetch(`http://localhost:5000/country/${params.id}`, 
+          console.log(params, "params")
+        )
       },   
+       
       {
         path: "/dashboard",
         element: <Dashboard />,
+      }, 
+      {
+        path: "/dashboard/post",
+        element: <Post />,
       }, 
       {
         path: "/web-admin",

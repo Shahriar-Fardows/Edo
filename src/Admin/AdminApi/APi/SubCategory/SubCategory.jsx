@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-const Post = () => {
+const SubCategory = () => {
     const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('');
   const [newSubCategory, setNewSubCategory] = useState('');
@@ -52,4 +52,4 @@ const Post = () => {
   );
 };
 
-export default Post;
+export default SubCategory;
