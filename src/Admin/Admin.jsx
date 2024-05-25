@@ -4,10 +4,13 @@ import AdminNav from "./AdminNav/AdminNav";
 const Admin = () => {
     return (
         <div>
-            <AdminNav />
             <div>
-                <div className="min-h-screen container bg-white mx-auto lg:ml-[16%]	 z-50 sm:py-[25%] md:py-[10%] lg:py-5">
-                    <Outlet />
+                {/* here come sidebar */}
+                <AdminNav/>
+                <div className="flex-1 md:ml-80 md:mr-20">
+                    <div className="pt-[80px] min-h-[calc(100vh-64px)]">
+                        <Outlet />
+                    </div>
                 </div>
             </div>
         </div>
