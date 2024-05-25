@@ -1,55 +1,29 @@
-import { useEffect, useState } from "react";
+import { FaMoneyBillWave, FaWallet } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Post = () => {
-    const [categories, setCategories] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState('');
-  const [newSubCategory, setNewSubCategory] = useState('');
 
-  useEffect(() => {
-    // Fetch categories from server
-    fetch('http://localhost:5000/category')
-      .then(response => response.json())
-      .then(data => setCategories(data))
-      .catch(error => console.error('Error fetching categories:', error));
-  }, []);
 
-  const handleAddSubCategory = () => {
-    if (selectedCategory && newSubCategory) {
-      fetch(`http://localhost:5000/category/${selectedCategory}/sub-category`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ subCategory: newSubCategory }),
-      })
-        .then(response => response.json())
-        .then(data => {
-          console.log('Sub-category added:', data);
-          setNewSubCategory('');
-          // Optionally update the local state or re-fetch categories to reflect changes
-        })
-        .catch(error => console.error('Error adding sub-category:', error));
-    }
-  };
+    return (
+        <div className="border border-sky-500 border-dashed py-10 px-10 my-5 w-full ">
 
-  return (
-    <div>
-      <h1>Category Manager</h1>
-      <select onChange={e => setSelectedCategory(e.target.value)} value={selectedCategory}>
-        <option value="">Select a category</option>
-        {categories.map(category => (
-          <option key={category._id} value={category._id}>{category.name}</option>
-        ))}
-      </select>
-      <input
-        type="text"
-        placeholder="New sub-category"
-        value={newSubCategory}
-        onChange={e => setNewSubCategory(e.target.value)}
-      />
-      <button onClick={handleAddSubCategory}>Add Sub-Category</button>
-    </div>
-  );
+            <div>
+                <div className=" flex  justify-between p-6 border border-dashed shadow-2xl border-sky-500 bg-sky-100 rounded-xl">
+                    <h1 className="font-bold lg:text-2xl  flex items-center gap-5 "><FaWallet className="text-sky-500" /> Current Balance : <span className="text-sky-500">$ 00</span></h1>
+                    <NavLink to="/dashboard/recharge" className="inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded bg-sky-400 px-5 text-sm font-medium tracking-wide text-white shadow-md shadow-sky-200 transition duration-300 hover:bg-sky-500 hover:shadow-sm hover:shadow-sky-200 focus:bg-sky-400 focus:shadow-sm focus:shadow-sky-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-sky-300 disabled:bg-sky-300 disabled:shadow-none">
+                    <FaMoneyBillWave className="text-[2rem]" />
+                    <h1>Recharge</h1>
+                </NavLink>
+                </div>
+            </div>
+
+
+            <form action="">
+
+            </form>
+
+        </div>
+    );
 };
 
 export default Post;

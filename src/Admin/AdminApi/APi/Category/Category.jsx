@@ -43,9 +43,10 @@ const Category = () => {
 
 
     return (
-        <div className="lg:w-[30%] border border-sky-500 p-10">
+        <div className="lg:w-[100%] border border-sky-500 p-10">
             <h1 className="text-2xl font-bold text-center">Update category Api</h1><br />
             <form className=" " onSubmit={ApiUpdate}>
+                
 
                 <div className="relative">
                     <input id="id-01" type="text" name="category" placeholder="your name" className="relative w-full h-10 px-4 text-sm placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white invalid:border-pink-500 invalid:text-pink-500 focus:border-sky-500 focus:outline-none invalid:focus:border-pink-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" />
@@ -54,7 +55,7 @@ const Category = () => {
                     </label>
                 </div><br />
 
-                <button type="submit" className="bg-sky-500 hover:bg-sky-400 text-white py-2 px-4 rounded">Add</button>
+                <button type="submit" className="bg-sky-500 hover:bg-sky-400 text-white py-2 px-4 rounded">Add Category</button>
             </form>
         </div>
     );
