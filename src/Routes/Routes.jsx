@@ -28,9 +28,7 @@ const Routes = createBrowserRouter([
       {
         path: "/:country/:city/:subcities",
         element: <SubCity />,
-        loader: ({params})=> fetch(`http://localhost:5000/country/${params.id}`, 
-          console.log(params, "params")
-        )
+        loader: ({params})=> fetch(`http://localhost:5000/country/${params.id}`)
       },   
        
       {
