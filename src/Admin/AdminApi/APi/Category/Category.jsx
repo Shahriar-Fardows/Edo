@@ -15,7 +15,7 @@ const Category = () => {
             });
         } else {
 
-            fetch("http://localhost:5000/category", {
+            fetch("https://listing-web-server.vercel.app/category", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

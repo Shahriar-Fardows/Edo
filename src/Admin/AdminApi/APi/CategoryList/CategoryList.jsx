@@ -7,7 +7,7 @@ const CategoryList = () => {
     // get the category list
 
     useEffect(() => {
-        fetch("http://localhost:5000/category")
+        fetch("https://listing-web-server.vercel.app/category")
             .then((response) => response.json())
             .then((data) => {
                 setCategoryList(data);
@@ -28,7 +28,7 @@ const CategoryList = () => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/category/${id}`, {
+                fetch(`https://listing-web-server.vercel.app/category/${id}`, {
                     method: "DELETE",
                 })
                     .then((response) => response.json())
