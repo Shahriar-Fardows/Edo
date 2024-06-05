@@ -3,7 +3,9 @@ import { Link, useParams } from "react-router-dom";
 import Sponsored from "../Sponsored/Sponsored";
 import AllContent from "../Content/AllContent";
 import { MdDelete } from "react-icons/md";
+import { GoDotFill } from "react-icons/go";
 import useAdmin from "../../Context/useAdmin";
+import Swal from "sweetalert2";
 
 
 const SubCity = () => {
@@ -22,11 +24,36 @@ const SubCity = () => {
     }, []);
 
     // delete category
+    const deleteItem = (categoryId, subcat) => {
+        console.log(categoryId, subcat);
+        fetch(`/${categoryId}/sub-category/${encodeURIComponent(subcat)}`, {
+            method: 'DELETE'
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log("Sub-category deleted:", data);
+                Swal.fire({
+                    text: 'Delete successful!',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                });
+                // After deleting, update the categories by fetching them again
+                fetchCategories();
+            })
+            .catch(error => {
+                console.error("Error deleting sub-category:", error);
+            });
+    };
 
-    const deleteItem = () => {
-        console.log('delete');
-    }
-  
+    // Function to fetch categories
+    const fetchCategories = () => {
+        fetch(`http://localhost:5000/category`)
+            .then((response) => response.json())
+            .then((data) => {
+                setCategory(data);
+            });
+    };
+
 
     return (
         <div className="border border-sky-500 border-dashed px-4 my-5 w-full">
@@ -49,7 +76,11 @@ const SubCity = () => {
                                     {cat.sub_categories.map((subcat) => (
                                         <li key={subcat} className="border-b py-2 flex items-center justify-between hover:bg-slate-400">
                                             <Link to={`/${country}/${city}/${subcities}/${subcat}`}>{subcat} </Link>
-                                            {admin && <MdDelete onClick={deleteItem} />}
+                                            <span>
+                                                {
+                                                    admin ?  <MdDelete onClick={() => deleteItem(cat._id, subcat)} /> : <GoDotFill/>
+                                                }
+                                            </span>
                                         </li>
                                     ))}
                                 </ul>

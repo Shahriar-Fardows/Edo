@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { MdDelete } from "react-icons/md";
 import { Link } from "react-router-dom";
 import useAdmin from "../../Context/useAdmin";
+import { GoDotFill } from "react-icons/go";
 
 const CountryData = () => {
     const [postData, setPostData] = useState([]);
@@ -119,7 +120,11 @@ const CountryData = () => {
                                             {city.subcities.map((subcity) => (
                                                 <li key={subcity} className="flex justify-between items-center hover:text-sky-700 hover:bg-sky-100 transition-all">
                                                     <Link to={`/${country.country}/${city.city}/${subcity}`}>{subcity}</Link>
-                                                    {admin && <MdDelete onClick={deleteItem} />}
+                                                    <span>
+                                                {
+                                                    admin ? <MdDelete onClick={() => deleteItem()} /> : <GoDotFill/>
+                                                }
+                                            </span>
                                                 </li>
                                             ))}
                                         </ul>

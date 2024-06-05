@@ -4,7 +4,7 @@ import useAuthContext from "./useAuthContext";
 const useAdmin = () => {
     const { user } = useAuthContext();
     const [email, setEmail] = useState([]);
-    const [admin, setAdmin] = useState('false');
+    const [admin, setAdmin] = useState(false);
     console.log(admin, 'admin');
 
     useEffect(() => {
@@ -16,8 +16,8 @@ const useAdmin = () => {
     }, []);
 
     useEffect(() => {
-        if (email.length > 0 && user && user.email) {
-            if (email[0].email === user.email) {
+        if (user) {
+            if (user.email === email[0].email) {
                 console.log('email matched');
                 setAdmin(true);
             }
