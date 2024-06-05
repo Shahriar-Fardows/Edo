@@ -4,13 +4,12 @@ import { Link } from "react-router-dom";
 const Sponsored = () => {
 
     const [data, setData] = useState([]);
+    console.log(data , 'data');
 
     useEffect(() => {
-        fetch('sponsored.json')
+        fetch('http://localhost:5000/sponsor')
             .then(res => res.json())
-            .then(data => {
-                setData(data);
-            });
+            .then(data => setData(data));
     }, []);
 
 
@@ -18,7 +17,7 @@ const Sponsored = () => {
 
     return (
         <div className="border border-sky-500 border-dashed py-10 px-10 ">
-            <h1 className="text-center text-3xl text-sky-500 underline font-bold	">SPONSORED WEBSITES</h1>
+            <h1 className="text-center text-3xl text-sky-500 underline font-bold">SPONSORED WEBSITES</h1>
 
             <div className="flex flex-wrap justify-center py-12 gap-2">
                 {

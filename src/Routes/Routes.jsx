@@ -28,7 +28,7 @@ const Routes = createBrowserRouter([
       {
         path: "/:country/:city/:subcities",
         element: <SubCity />,
-        loader: ({params})=> fetch(`https://listing-web-server.vercel.app/country/${params.id}`)
+        loader: ({params})=> fetch(`https://listing-web-server.vercel.app/${params.country}/${params.city}/${params.subcities}`)
       },   
        
       {

@@ -7,7 +7,7 @@ const CountryData = () => {
     const [selectedCity, setSelectedCity] = useState("");
 
     useEffect(() => {
-        fetch("https://listing-web-server.vercel.app/country")
+        fetch("http://localhost:5000/country")
             .then((response) => response.json())
             .then((data) => {
                 setPostData(data);

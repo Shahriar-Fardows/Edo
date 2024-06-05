@@ -6,7 +6,7 @@ const SubCategory = () => {
 
     useEffect(() => {
         // Fetch categories from server
-        fetch('https://listing-web-server.vercel.app/category')
+        fetch('http://localhost:5000/category')
             .then(response => response.json())
             .then(data => setCategories(data))
             .catch(error => console.error('Error fetching categories:', error));
@@ -17,7 +17,7 @@ const SubCategory = () => {
         const subCategory = e.target.sub_category.value;
 
         if (selectedCategoryId) {
-            fetch(`https://listing-web-server.vercel.app/category/${selectedCategoryId}/sub-category`, {
+            fetch(`http://localhost:5000/category/${selectedCategoryId}/sub-category`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
