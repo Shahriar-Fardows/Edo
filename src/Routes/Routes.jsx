@@ -1,19 +1,19 @@
 import { createBrowserRouter } from "react-router-dom";
-import Root from "../Root";
-import Home from "../Home/Home";
+import Admin from "../Admin/Admin";
+import AdminApi from "../Admin/AdminApi/AdminApi";
+import AdminHome from "../Admin/AdminHome/AdminHome";
+import AdminLogin from "../Admin/AdminLogin/AdminLogin";
+import Dashboard from "../Components/Dashboard/Dashboard";
+import Post from "../Components/Dashboard/Post/Post";
+import Profile from "../Components/Profile/Profile";
 import Error from "../Error/Error";
+import SubCity from "../Home/CountryData/SubCity";
+import Home from "../Home/Home";
+import ForgotPassword from "../Log/ForgotPassword";
 import Login from "../Log/Login";
 import SignUp from "../Log/SignUp";
-import ForgotPassword from "../Log/ForgotPassword";
-import Profile from "../Components/Profile/Profile";
+import Root from "../Root";
 import PrivetRoute from "./PrivetRoutes";
-import Dashboard from "../Components/Dashboard/Dashboard";
-import AdminLogin from "../Admin/AdminLogin/AdminLogin";
-import Admin from "../Admin/Admin";
-import AdminHome from "../Admin/AdminHome/AdminHome";
-import AdminApi from "../Admin/AdminApi/AdminApi";
-import SubCity from "../Home/CountryData/SubCity";
-import Post from "../Components/Dashboard/Post/Post";
 
 const Routes = createBrowserRouter([
   {
@@ -28,9 +28,7 @@ const Routes = createBrowserRouter([
       {
         path: "/:country/:city/:subcities",
         element: <SubCity />,
-        loader: ({params})=> fetch(`http://localhost:5000/country/${params.id}`, 
-          console.log(params, "params")
-        )
+        loader: ({params})=> fetch(`https://listing-web-server.vercel.app/${params.country}/${params.city}/${params.subcities}`)
       },   
        
       {

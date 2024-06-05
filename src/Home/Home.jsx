@@ -1,14 +1,12 @@
 import AllContent from "./Content/AllContent";
-// import CountryData from "./CountryData/CountryData";
-import CountryDatas from "./CountryData/CountryDatas";
+import CountryData from "./CountryData/CountryData";
 import Sponsored from "./Sponsored/Sponsored";
 
 const Home = () => {
     
     return (
         <div>
-            {/* <CountryData/> */}
-            <CountryDatas/>
+            <CountryData/>
             <AllContent/>
            <Sponsored/>
         </div>
