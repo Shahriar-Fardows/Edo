@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Sponsored = () => {
@@ -22,7 +22,7 @@ const Sponsored = () => {
             <div className="flex flex-wrap justify-center py-12 gap-2">
                 {
                     data.map(item => (
-                        <div key={item.id} className="py-1">
+                        <div key={item._id} className="py-1">
                             
                             <Link to={item.company_url}  className="mr-3 mb-3 px-3 py-1 bg-sky-400 rounded cursor-pointer">
                             {/* className="mr-3 mb-3 px-3 py-1 bg-gray-200 rounded cursor-pointer" */}

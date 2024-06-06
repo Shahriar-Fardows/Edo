@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
+import { GoDotFill } from "react-icons/go";
 import { MdDelete } from "react-icons/md";
 import { Link } from "react-router-dom";
 import useAdmin from "../../Context/useAdmin";
-import { GoDotFill } from "react-icons/go";
 
 const CountryData = () => {
     const [postData, setPostData] = useState([]);

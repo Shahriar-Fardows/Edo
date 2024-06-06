@@ -78,10 +78,6 @@ const Login = () => {
                     </div>
                     <div className="flex flex-wrap -mx-4 mb-6 items-center justify-between">
                         <div className="w-full lg:w-auto px-4 mb-4 lg:mb-0">
-                            <label htmlFor="">
-                                {/* <input type="checkbox" />
-                                <span className="ml-1 font-extrabold">Remember me</span> */}
-                            </label>
                         </div>
                         <div className="w-full text-sky-600 lg:w-auto px-4"><Link to='/forgotPassword' className="inline-block font-extrabold hover:underline" href="#">Forgot your
                             password?</Link></div>

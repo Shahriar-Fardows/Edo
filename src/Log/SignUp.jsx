@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { IoEye } from "react-icons/io5";
 import { IoMdEyeOff } from "react-icons/io";
+import { IoEye } from "react-icons/io5";
 import { Link, } from "react-router-dom";
 import Swal from "sweetalert2";
 import useAuthContext from "../Context/useAuthContext";
@@ -21,8 +21,7 @@ const SignUp = () => {
         google()
             .then((result) => {
                 window.location.href = "/";
-                const user = result.user;
-                console.log(user)
+                console.log(result, 'result');
             }).catch((error) => {
                 const errorMessage = error.message;
                 console.log(errorMessage)
