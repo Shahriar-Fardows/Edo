@@ -84,7 +84,7 @@ const SubCity = () => {
                                     {cat.sub_categories.map((subcat) => (
                                         <li key={subcat} className="border-b py-2 flex items-center justify-between ">
                                             <div className="w-[15rem] hover:bg-slate-400">
-                                                <Link className="hover:text-white" to={`/${country}/${city}/${subcities}/${subcat}`}>{subcat}</Link>
+                                                <Link className="hover:text-white" to={`/${country}/${city}/${subcities}/${cat.category}/${subcat}`}>{subcat}</Link>
                                             </div>
                                             <div>
                                                 <span>

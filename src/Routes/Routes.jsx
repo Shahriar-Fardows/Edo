@@ -32,9 +32,9 @@ const Routes = createBrowserRouter([
         loader: ({params})=> fetch(`http://localhost:5000/${params.country}/${params.city}/${params.subcities}`)
       },   
       {
-        path: "/:country/:city/:subcities/:subcat",
+        path: "/:country/:city/:subcities/:cat/:subcat",
         element: <AllPost />,
-        loader: ({params})=> fetch(`http://localhost:5000/${params.country}/${params.city}/${params.subcities}/${params.subcat}`)
+        loader: ({params})=> fetch(`http://localhost:5000/${params.country}/${params.city}/${params.subcities}/${params.cat}/${params.subcat}`)
       },   
        
       {

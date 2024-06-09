@@ -68,59 +68,64 @@ const Form = () => {
         const category = fromData.get("category");
         const subcategory = fromData.get("subcategory");
         const bodyText = fromData.get("bodyText");
-        const img = fromData.get("img-upload");
         const email = fromData.get("email");
         const number = fromData.get("number");
         const featuredPackage = fromData.get("featuredPackage");
         const extendPackage = fromData.get("extendPackage");
+        const image_upload = fromData.get("image_upload");
 
-        const post = {
-            country,
-            city,
-            sub_city,
-            title,
-            category,
-            subcategory,
-            bodyText,
-            email,
-            number,
-            featuredPackage,
-            extendPackage,
-            img,
-        };
+        const data = new FormData();
+        data.append('image', image_upload);
 
-        console.log(post);
-
-        fetch("http://localhost:5000/post", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(post),
+        fetch('https://api.imgbb.com/1/upload?key=b9d801dc23f129666ab26bcec55288e1', {
+            method: 'POST',
+            body: data,
         })
-            .then((response) => response.json())
-            .then((data) => {
-                console.log("Post added:", data);
-                Swal.fire({
-                    text: 'You Post successfully!',
-                    icon: 'success',
-                    confirmButtonText: 'Cool'
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                const post = {
+                    country,
+                    city,
+                    sub_city,
+                    title,
+                    category,
+                    subcategory,
+                    bodyText,
+                    email,
+                    number,
+                    featuredPackage,
+                    extendPackage,
+                    image: data.data.url,
+                };
+
+
+                fetch("http://localhost:5000/post", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(post),
                 })
-                const form = e.target;
-                form.reset()
+                    .then((response) => response.json())
+                    .then((data) => {
+                        console.log("Post added:", data);
+                        Swal.fire({
+                            text: 'You Post successfully!',
+                            icon: 'success',
+                            confirmButtonText: 'Cool'
+                        })
+                        // const form = e.target;
+                        // form.reset()
+                    })
+                    .catch((error) => {
+                        console.error("Error adding post:", error);
+                    });
             })
-            .catch((error) => {
-                console.error("Error adding post:", error);
-            });
+
+
 
     }
-
-
-
-
-
-
-
 
 
 
@@ -269,20 +274,9 @@ const Form = () => {
                         </div>
                     </div>
                     <br /><br />
-                    <div className="relative my-6">
-                        <input id="id-dropzone01" name="img-upload" type="file" className="hidden" />
-                        <label htmlFor="id-dropzone01" className="relative flex flex-col items-center gap-4 px-3 py-6 text-sm font-medium text-center transition-colors border border-dashed rounded cursor-pointer border-slate-300">
-                            <span className="inline-flex items-center self-center justify-center h-12 px-3 rounded-full bg-slate-100/70 text-slate-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" aria-label="File input icon" role="graphics-symbol" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6 ">
-                                    <path strokeLinecap="round" className="" strokeLinejoin="round" d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
-                                </svg>
-                            </span>
-                            <span className="text-slate-500">
-                                <span className="text-sky-500 mx-2">Upload media</span>
-                                 or drag and drop
-                                PNG or JPG up to 10MB
-                            </span>
-                        </label>
+                    <div className="relative inline-flex items-center w-full gap-2 my-6 text-sm border rounded border-slate-200 text-slate-500">
+                        <input id="file-upload" name="image_upload" type="file" className="peer order-2 [&::file-selector-button]:hidden" multiple />
+                        <label htmlFor="file-upload" className="inline-flex items-center justify-center h-12 gap-2 px-6 text-sm font-medium tracking-wide text-white transition duration-300 rounded cursor-pointer whitespace-nowrap bg-emerald-500 hover:bg-emerald-600 focus:bg-emerald-700 focus-visible:outline-none peer-disabled:cursor-not-allowed peer-disabled:border-emerald-300 peer-disabled:bg-emerald-300"> Upload a file </label>
                     </div>
                     <br /><br />
                     <div>
