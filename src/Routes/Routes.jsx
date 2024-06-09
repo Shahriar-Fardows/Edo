@@ -14,6 +14,7 @@ import Login from "../Log/Login";
 import SignUp from "../Log/SignUp";
 import Root from "../Root";
 import PrivetRoute from "./PrivetRoutes";
+import AllPost from "../Components/Dashboard/Post/AllPost/AllPost";
 
 const Routes = createBrowserRouter([
   {
@@ -28,7 +29,12 @@ const Routes = createBrowserRouter([
       {
         path: "/:country/:city/:subcities",
         element: <SubCity />,
-        loader: ({params})=> fetch(`https://listing-web-server.vercel.app/${params.country}/${params.city}/${params.subcities}`)
+        loader: ({params})=> fetch(`http://localhost:5000/${params.country}/${params.city}/${params.subcities}`)
+      },   
+      {
+        path: "/:country/:city/:subcities/:subcat",
+        element: <AllPost />,
+        loader: ({params})=> fetch(`http://localhost:5000/${params.country}/${params.city}/${params.subcities}/${params.subcat}`)
       },   
        
       {
