@@ -15,6 +15,7 @@ import SignUp from "../Log/SignUp";
 import Root from "../Root";
 import PrivetRoute from "./PrivetRoutes";
 import AllPost from "../Components/Dashboard/Post/AllPost/AllPost";
+import PostInfo from "../Components/Dashboard/Post/AllPost/PostInfo";
 
 const Routes = createBrowserRouter([
   {
@@ -35,8 +36,17 @@ const Routes = createBrowserRouter([
         path: "/:country/:city/:subcities/:cat/:subcat",
         element: <AllPost />,
         loader: ({params})=> fetch(`http://localhost:5000/${params.country}/${params.city}/${params.subcities}/${params.cat}/${params.subcat}`)
-      },   
-       
+      },
+      {
+        path: "/:country/:city/:subcities/:cat/:subcat/:id",
+        element: <PostInfo />,
+        loader: ({params})=> fetch(`http://localhost:5000/post/${params.id}`)
+        
+      },
+      {
+        
+      }   
+       ,
       {
         path: "/dashboard",
         element: <Dashboard />,

@@ -1,0 +1,6 @@
+.carousel .thumb.selected, .carousel .thumb:hover{
+    border: 1px solid #007bff;
+}
+.carousel .thumb:focus{
+    border: 1px solid #007bff;
+}

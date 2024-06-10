@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 const Sponsored = () => {
 
     const [data, setData] = useState([]);
-    console.log(data , 'data');
 
     useEffect(() => {
         fetch('http://localhost:5000/sponsor')
