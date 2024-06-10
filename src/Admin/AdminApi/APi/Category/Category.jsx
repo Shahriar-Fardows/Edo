@@ -15,7 +15,7 @@ const Category = () => {
             });
         } else {
 
-            fetch("https://listing-web-server.up.railway.app/category", {
+            fetch("http://localhost:5000/category", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
