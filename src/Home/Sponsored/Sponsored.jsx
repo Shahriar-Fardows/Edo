@@ -6,7 +6,7 @@ const Sponsored = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/sponsor')
+        fetch('https://listing-web-server.up.railway.app/sponsor')
             .then(res => res.json())
             .then(data => setData(data));
     }, []);

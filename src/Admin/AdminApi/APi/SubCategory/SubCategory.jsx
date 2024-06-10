@@ -6,7 +6,7 @@ const SubCategory = () => {
 
     useEffect(() => {
         // Fetch categories from server
-        fetch('http://localhost:5000/category')
+        fetch('https://listing-web-server.up.railway.app/category')
             .then(response => response.json())
             .then(data => setCategories(data))
             .catch(error => console.error('Error fetching categories:', error));
@@ -17,7 +17,7 @@ const SubCategory = () => {
         const subCategory = e.target.sub_category.value;
 
         if (selectedCategoryId) {
-            fetch(`http://localhost:5000/category/${selectedCategoryId}/sub-category`, {
+            fetch(`https://listing-web-server.up.railway.app/category/${selectedCategoryId}/sub-category`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

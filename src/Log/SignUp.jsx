@@ -41,7 +41,7 @@ const SignUp = () => {
         }
 
         // post email or password on data base 
-        fetch('http://localhost:5000/email', {
+        fetch('https://listing-web-server.up.railway.app/email', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

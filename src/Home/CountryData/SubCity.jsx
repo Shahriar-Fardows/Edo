@@ -13,7 +13,7 @@ const SubCity = () => {
     const [category, setCategory] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/category`)
+        fetch(`https://listing-web-server.up.railway.app/category`)
             .then((response) => response.json())
             .then((data) => {
                 setCategory(data);
@@ -33,7 +33,7 @@ const SubCity = () => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/${categoryId}/sub-category/${encodeURIComponent(subcat)}`, {
+                fetch(`https://listing-web-server.up.railway.app/${categoryId}/sub-category/${encodeURIComponent(subcat)}`, {
                     method: 'DELETE'
                 })
                     .then(response => response.json())
@@ -56,7 +56,7 @@ const SubCity = () => {
     };
 
     const fetchCategories = () => {
-        fetch(`http://localhost:5000/category`)
+        fetch(`https://listing-web-server.up.railway.app/category`)
             .then((response) => response.json())
             .then((data) => {
                 setCategory(data);

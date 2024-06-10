@@ -8,7 +8,7 @@ const useAdmin = () => {
     const adminEmail = emails[0];
 
     useEffect(() => {
-        fetch(`http://localhost:5000/email`)
+        fetch(`https://listing-web-server.up.railway.app/email`)
             .then((response) => response.json())
             .then((data) => {setEmail(data);
             });
