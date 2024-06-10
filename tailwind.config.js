@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 /* eslint-disable no-undef */
-=======
->>>>>>> dev
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -9,7 +6,6 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-<<<<<<< HEAD
     screens: {
       'sm': '340px',
       // => @media (min-width: 640px) { ... }
@@ -29,10 +25,5 @@ export default {
   },
 
   plugins: [require('daisyui'),]
-=======
-    extend: {},
-  },
-  plugins: [],
->>>>>>> dev
 }
 
