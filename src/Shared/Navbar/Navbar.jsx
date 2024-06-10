@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { FaRegUserCircle } from "react-icons/fa";
@@ -163,6 +164,14 @@ const Navbar = () => {
                 </nav>
             </div>
         </header>
+=======
+
+const Navbar = () => {
+    return (
+        <div>
+            
+        </div>
+>>>>>>> dev
     );
 };
 
