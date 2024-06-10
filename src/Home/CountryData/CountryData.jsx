@@ -12,7 +12,7 @@ const CountryData = () => {
 
 
     useEffect(() => {
-        fetch("https://listing-web-server.up.railway.app/country")
+        fetch("http://localhost:5000/country")
             .then((response) => response.json())
             .then((data) => {
                 setPostData(data);

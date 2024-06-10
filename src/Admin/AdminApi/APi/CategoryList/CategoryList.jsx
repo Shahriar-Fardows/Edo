@@ -7,7 +7,7 @@ const CategoryList = () => {
     // get the category list
 
     useEffect(() => {
-        fetch("https://listing-web-server.up.railway.app/category")
+        fetch("http://localhost:5000/category")
             .then((response) => response.json())
             .then((data) => {
                 setCategoryList(data);
@@ -28,7 +28,7 @@ const CategoryList = () => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`https://listing-web-server.up.railway.app/category/${id}`, {
+                fetch(`http://localhost:5000/category/${id}`, {
                     method: "DELETE",
                 })
                     .then((response) => response.json())

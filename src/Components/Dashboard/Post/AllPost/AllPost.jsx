@@ -7,7 +7,7 @@ const AllPost = () => {
 
 
     useEffect(() => {
-        fetch(`https://listing-web-server.up.railway.app/post`)
+        fetch(`http://localhost:5000/post`)
             .then(res => res.json())
             .then(data => {
                 setPosts(data);

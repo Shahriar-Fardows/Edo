@@ -30,17 +30,17 @@ const Routes = createBrowserRouter([
       {
         path: "/:country/:city/:subcities",
         element: <SubCity />,
-        loader: ({params})=> fetch(`https://listing-web-server.up.railway.app/${params.country}/${params.city}/${params.subcities}`)
+        loader: ({params})=> fetch(`http://localhost:5000/${params.country}/${params.city}/${params.subcities}`)
       },   
       {
         path: "/:country/:city/:subcities/:cat/:subcat",
         element: <AllPost />,
-        loader: ({params})=> fetch(`https://listing-web-server.up.railway.app/${params.country}/${params.city}/${params.subcities}/${params.cat}/${params.subcat}`)
+        loader: ({params})=> fetch(`http://localhost:5000/${params.country}/${params.city}/${params.subcities}/${params.cat}/${params.subcat}`)
       },
       {
         path: "/:country/:city/:subcities/:cat/:subcat/:id",
         element: <PostInfo />,
-        loader: ({params})=> fetch(`https://listing-web-server.up.railway.app/post/${params.id}`)
+        loader: ({params})=> fetch(`http://localhost:5000/post/${params.id}`)
         
       },
       {

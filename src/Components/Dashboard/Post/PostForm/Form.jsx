@@ -14,14 +14,14 @@ const Form = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch("https://listing-web-server.up.railway.app/country")
+        fetch("http://localhost:5000/country")
             .then((response) => response.json())
             .then((data) => {
                 setPostData(data);
             });
     }, []);
     useEffect(() => {
-        fetch("https://listing-web-server.up.railway.app/category")
+        fetch("http://localhost:5000/category")
             .then((response) => response.json())
             .then((data) => {
                 setCategory(data);
@@ -100,7 +100,7 @@ const Form = () => {
                 };
 
 
-                fetch("https://listing-web-server.up.railway.app/post", {
+                fetch("http://localhost:5000/post", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
