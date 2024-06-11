@@ -42,10 +42,7 @@ const Routes = createBrowserRouter([
         element: <PostInfo />,
         loader: ({params})=> fetch(`http://localhost:5000/post/${params.id}`)
         
-      },
-      {
-        
-      }   
+      } 
        ,
       {
         path: "/dashboard",
