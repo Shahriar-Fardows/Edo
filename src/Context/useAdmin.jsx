@@ -3,20 +3,23 @@ import useAuthContext from "./useAuthContext";
 
 const useAdmin = () => {
     const { user } = useAuthContext();
-    const [emails, setEmail] = useState([]);
+    const [emails, setEmails] = useState([]);
     const [admin, setAdmin] = useState(false);
-    const adminEmail = emails[0];
+    const adminEmail = emails.length > 0 ? emails[0].email : null;
+    console.log(adminEmail, 'adminEmail');
 
     useEffect(() => {
         fetch(`http://localhost:5000/email`)
             .then((response) => response.json())
-            .then((data) => {setEmail(data);
-            });
+            .then((data) => {
+                setEmails(data);
+            })
+            .catch((error) => console.error('Error fetching emails:', error));
     }, []);
 
     useEffect(() => {
-        if (user) {
-            if (user.email === adminEmail.email) {
+        if (user && adminEmail) {
+            if (user.email === adminEmail) {
                 console.log('email matched');
                 setAdmin(true);
             }

@@ -1,14 +1,10 @@
 import { useEffect, useState } from "react";
-import { GoDotFill } from "react-icons/go";
-import { MdDelete } from "react-icons/md";
 import { Link } from "react-router-dom";
-import useAdmin from "../../Context/useAdmin";
 
 const CountryData = () => {
     const [postData, setPostData] = useState([]);
     const [selectedCountry, setSelectedCountry] = useState("");
     const [selectedCity, setSelectedCity] = useState("");
-    const { admin } = useAdmin();
 
 
     useEffect(() => {
@@ -28,14 +24,10 @@ const CountryData = () => {
         setSelectedCity(city);
     };
     
-    // delete subcity
-
-    const deleteItem = () => {
-        console.log('delete');
-    }
 
     return (
         <div className="border border-sky-500 border-dashed py-5 px-2 my-5 w-full">
+            <h1 className="text-2xl my-5">Get Your Country and city</h1>
             <div className="flex">
                 <select
                     value={selectedCountry}
@@ -121,9 +113,6 @@ const CountryData = () => {
                                                 <li key={subcity} className="flex justify-between items-center hover:text-sky-700 hover:bg-sky-100 transition-all">
                                                     <Link to={`/${country.country}/${city.city}/${subcity}`}>{subcity}</Link>
                                                     <span>
-                                                {
-                                                    admin ? <MdDelete onClick={() => deleteItem()} /> : <GoDotFill/>
-                                                }
                                             </span>
                                                 </li>
                                             ))}
