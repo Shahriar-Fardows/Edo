@@ -12,7 +12,6 @@ const SignUp = () => {
     console.log(user, 'user');
 
 
-
     const showPassword = () => {
         setVisible(!visible);
     }
@@ -20,6 +19,19 @@ const SignUp = () => {
     const Google = () => {
         google()
             .then((result) => {
+                // post email or password on data base 
+                fetch('http://localhost:5000/email', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(user)
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data)
+                    })
+
                 window.location.href = "/";
                 console.log(result, 'result');
             }).catch((error) => {

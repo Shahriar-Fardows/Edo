@@ -67,8 +67,8 @@ const AdminNav = () => {
             </NavLink>
         </li>
         <li className="px-3">
-            <a
-                href="#"
+            <NavLink
+                to='total-user'
                 className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-sky-50 hover:text-sky-500 focus:bg-sky-50 aria-[current=page]:bg-sky-50 aria-[current=page]:text-sky-500 "
             >
                 <div className="flex w-6 items-center self-center">
@@ -90,12 +90,12 @@ const AdminNav = () => {
                     </svg>
                 </div>
                 <div className="flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm">
-                    Tasks
+                    Total User
                 </div>
                 <span className="inline-flex items-center justify-center rounded-full bg-pink-100 px-2 text-xs text-pink-500 ">
                     7<span className="sr-only"> new notifications</span>
                 </span>
-            </a>
+            </NavLink>
         </li>
         <li className="px-3">
             <a

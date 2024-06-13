@@ -16,6 +16,7 @@ import Login from "../Log/Login";
 import SignUp from "../Log/SignUp";
 import Root from "../Root";
 import PrivetRoute from "./PrivetRoutes";
+import TotalUser from "../Admin/Total_user/TotalUser";
 
 const Routes = createBrowserRouter([
   {
@@ -89,6 +90,10 @@ const Routes = createBrowserRouter([
       {
         path: "api-update",
         element: <AdminApi />,
+      },
+      {
+        path: "total-user",
+        element: <TotalUser />,
       },
     ]
   }
