@@ -8,7 +8,7 @@ import useAuthContext from "../Context/useAuthContext";
 const SignUp = () => {
     const [visible, setVisible] = useState(false);
 
-    const { user, createUser, google } = useAuthContext();
+    const { user, createUser,  } = useAuthContext();
     console.log(user, 'user');
 
 
@@ -16,30 +16,30 @@ const SignUp = () => {
         setVisible(!visible);
     }
 
-    const Google = () => {
-        google()
-            .then((result) => {
-                // post email or password on data base 
-                fetch('http://localhost:5000/email', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(user)
-                })
-                    .then(res => res.json())
-                    .then(data => {
-                        console.log(data)
-                    })
+    // const Google = () => {
+    //     google()
+    //         .then((result) => {
+    //             // post email or password on data base 
+    //             fetch('http://localhost:5000/email', {
+    //                 method: 'POST',
+    //                 headers: {
+    //                     'Content-Type': 'application/json'
+    //                 },
+    //                 body: JSON.stringify(user)
+    //             })
+    //                 .then(res => res.json())
+    //                 .then(data => {
+    //                     console.log(data)
+    //                 })
 
-                window.location.href = "/";
-                console.log(result, 'result');
-            }).catch((error) => {
-                const errorMessage = error.message;
-                console.log(errorMessage)
+    //             window.location.href = "/";
+    //             console.log(result, 'result');
+    //         }).catch((error) => {
+    //             const errorMessage = error.message;
+    //             console.log(errorMessage)
 
-            });
-    }
+    //         });
+    // }
 
 
     const signUpData = e => {
@@ -130,7 +130,7 @@ const SignUp = () => {
                     <p className="text-center font-extrabold">Don&rsquo;t have an account? <Link to='/login' className="text-sky-500 hover:underline"
                     >Sign in</Link></p>
                 </form>
-                <div className="">
+                {/* <div className="">
                     <div className="flex w-full items-center gap-2 py-6 text-sm text-slate-600">
                         <div className="h-px w-full bg-slate-200"></div>OR
                         <div className="h-px w-full bg-slate-200"></div>
@@ -154,7 +154,7 @@ const SignUp = () => {
                                 fill="#e54335"></path>
                         </svg>Continue with Google
                     </button>
-                </div>
+                </div> */}
             </div>
         </div>
     );

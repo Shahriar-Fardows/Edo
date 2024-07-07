@@ -1,8 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { MdOutlinePayments } from "react-icons/md";
 
 const AdminNav = () => {
-    const [isSideNavOpen, setIsSideNavOpen] = useState(false)
+    const [isSideNavOpen, setIsSideNavOpen] = useState(false);
+    const [totalUser, setTotalUser] = useState([]);
+
+    console.log(totalUser);
+
+    useEffect(() => {
+        fetch("http://localhost:5000/total-user")
+            .then((res) => res.json())
+            .then((data) => setTotalUser(data));
+    }, []);
 
 
     const navItems = <>
@@ -39,7 +49,7 @@ const AdminNav = () => {
 
         <li className="px-3">
             <NavLink
-            to='api-update'
+                to='api-update'
                 href="#"
                 className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-sky-50 hover:text-sky-500 focus:bg-sky-50 aria-[current=page]:bg-sky-50 aria-[current=page]:text-sky-500 "
             >
@@ -62,7 +72,7 @@ const AdminNav = () => {
                     </svg>
                 </div>
                 <div className="flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm">
-                     Update Api
+                    Update Api
                 </div>
             </NavLink>
         </li>
@@ -93,10 +103,25 @@ const AdminNav = () => {
                     Total User
                 </div>
                 <span className="inline-flex items-center justify-center rounded-full bg-pink-100 px-2 text-xs text-pink-500 ">
-                    7<span className="sr-only"> new notifications</span>
+                    {totalUser.length}<span className="sr-only"> new notifications</span>
                 </span>
             </NavLink>
         </li>
+        <li className="px-3">
+            <NavLink
+                to='payment'
+                className="flex items-center gap-3 rounded p-3 text-slate-700 transition-colors hover:bg-sky-50 hover:text-sky-500 focus:bg-sky-50 aria-[current=page]:bg-sky-50 aria-[current=page]:text-sky-500 "
+            >
+                <div className="flex w-6 items-center self-center">
+                    <MdOutlinePayments className="h-6 w-6" />
+                </div>
+                <div className="flex w-full flex-1 flex-col items-start justify-center gap-0 overflow-hidden truncate text-sm">
+                    Total Payments
+                </div>
+               
+            </NavLink>
+        </li>
+
         <li className="px-3">
             <a
                 href="#"

@@ -25,7 +25,6 @@ const Dashboard = () => {
                     <div className="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
                         <div className="col-span-4 p-6 border border-dashed shadow-2xl border-sky-500 bg-sky-100 rounded-xl">
                             <h1 className="font-bold lg:text-2xl  flex items-center gap-5 "><FaWallet className="text-sky-500" /> Current Balance : <span className="text-sky-500">$ 00</span></h1>
-
                         </div>
                         <div className="col-span-4 p-6 border border-dashed shadow-2xl border-sky-500 bg-sky-100 rounded-xl">
                             <h1 className="font-bold   lg:text-2xl  flex items-center  gap-5"><BsPostcardHeartFill className="text-sky-500" /> Total Pending Post : <span className="text-sky-500"> 00</span></h1>
@@ -38,7 +37,7 @@ const Dashboard = () => {
                 </div>
             </section>
             <div>
-                <h1 className="text-3xl my-5">Active Post</h1>
+                <h1 className="text-3xl my-5">Post</h1>
                 <ActivePost />
             </div>
         </div>

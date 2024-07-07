@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoMdEyeOff } from "react-icons/io";
 import { IoEye } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import useAuthContext from "../Context/useAuthContext";
 import Swal from "sweetalert2";
 
@@ -11,30 +11,29 @@ const Login = () => {
         setVisible(!visible);
     }
 
-    const { loginUser, user, google } = useAuthContext();
+    const { loginUser } = useAuthContext();
 
-    console.log(user, 'user');
+    // console.log(user, 'user');
 
-     const Google = () => {
-        console.log('click to hoise');
-        google()
-            .then((result) => {
-                window.location.href = "/";
-                const user = result.user;
-                console.log(user)
-            }).catch((error) => {
-                const errorMessage = error.message;
-                console.log(errorMessage)
+    //  const Google = () => {
+    //     console.log('click to hoise');
+    //     google()
+    //         .then((result) => {
+    //             window.location.href = "/";
+    //             const user = result.user;
+    //             console.log(user)
+    //         }).catch((error) => {
+    //             const errorMessage = error.message;
+    //             console.log(errorMessage)
 
-            });
-    }
+    //         });
+    // }
 
     const loginData = e => {
         e.preventDefault();
         console.log(e);
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email, password);
         loginUser(email, password)
             .then(() => {
                 Swal.fire({
@@ -42,8 +41,12 @@ const Login = () => {
                     icon: 'success',
                     confirmButtonText: 'Cool'
                 })
-                // ...
+                    // ...
+                    .then(() => {
+                      return  <Navigate to='/profile' />
+                    })
             })
+
             .catch(() => {
                 Swal.fire({
                     title: 'Invalid email or password!',
@@ -86,7 +89,7 @@ const Login = () => {
                     <p className="text-center font-extrabold">Don&rsquo;t have an account? <Link to='/signUp' className="text-sky-500 hover:underline"
                     >Sign up</Link></p>
                 </form>
-                <div className="">
+                {/* <div className="">
                     <div className="flex w-full items-center gap-2 py-6 text-sm text-slate-600">
                         <div className="h-px w-full bg-slate-200"></div>OR
                         <div className="h-px w-full bg-slate-200"></div>
@@ -109,7 +112,7 @@ const Login = () => {
                                 fill="#e54335"></path>
                         </svg>Continue with Google
                     </button>
-                </div>
+                </div> */}
             </div>
         </div>
     );

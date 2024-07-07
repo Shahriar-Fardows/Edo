@@ -9,7 +9,6 @@ import Sponsored from "../Sponsored/Sponsored";
 
 const SubCity = () => {
     const {admin} = useAdmin();
-    console.log(admin, 'admin');
     const { country, city, subcities } = useParams();
     const [category, setCategory] = useState([]);
 
