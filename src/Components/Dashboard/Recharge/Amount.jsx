@@ -1,17 +1,14 @@
 import { useEffect, useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { FaCopy } from "react-icons/fa";
+import QRCode from "qrcode.react"; // Import the QRCode component
 
 const Amount = () => {
   const [selectedOption, setSelectedOption] = useState("");
   const [addresses, setAddresses] = useState([]);
   const [currentAddress, setCurrentAddress] = useState({});
   const [paymentAddress, setPaymentAddress] = useState('');
-  console.log(paymentAddress, 'paymentAddress');
   const [copySuccess, setCopySuccess] = useState(false);
-  // const [amount, setAmount] = useState('');
-  // const [address, setAddress] = useState('');
-  // const [loading, setLoading] = useState(false);
   const [paymentResponse, setPaymentResponse] = useState('');
 
   useEffect(() => {
@@ -24,13 +21,13 @@ const Amount = () => {
   }, []);
 
   const handleSubmit = (e) => {
-    handlePayment();
     e.preventDefault();
     if (selectedOption) {
       const selectedAddress = addresses.find((address) => address.name === selectedOption);
       setCurrentAddress(selectedAddress || {});
-      document.getElementById('my_modal_1').showModal();
       setPaymentAddress(selectedAddress.address);
+      document.getElementById('my_modal_1').showModal();
+      handlePayment(selectedAddress);
     }
   };
 
@@ -44,21 +41,11 @@ const Amount = () => {
     navigator.clipboard.writeText(e);
   };
 
-  const handlePayment = async () => {
-
-    const datas = {
-      name: currentAddress.name,
-      main_address: paymentAddress
-    }
-
-    console.log(datas);
-
-    console.log(paymentResponse, 'paymentResponse.,............................');
-
+  const handlePayment = async (selectedAddress) => {
     try {
       const query = new URLSearchParams({
         callback: 'http://localhost:5000/history', // Replace with your callback URL
-        address: currentAddress.address,
+        address: selectedAddress.address,
         pending: '0',
         confirmations: '1',
         email: 'user@example.com', // Replace with customer's email
@@ -69,10 +56,8 @@ const Amount = () => {
         convert: '1'
       }).toString();
 
-      const ticker = currentAddress.name; // Replace with the cryptocurrency ticker you want to use
+      const ticker = selectedAddress.name; // Replace with the cryptocurrency ticker you want to use
       const response = await fetch(`https://api.cryptapi.io/${ticker}/create/?${query}`);
-
-      console.log(response, 'response');
 
       if (!response.ok) {
         throw new Error('Network response was not ok ' + response.statusText);
@@ -80,11 +65,10 @@ const Amount = () => {
 
       const data = await response.json();
       setPaymentResponse(data);
+      setPaymentAddress(data.address_in); // Set the payment address from the response
     } catch (error) {
       console.error('Error making payment:', error);
       setPaymentResponse(`Error: ${error.message}`);
-    } finally {
-      // setLoading(false);
     }
   };
 
@@ -135,19 +119,23 @@ const Amount = () => {
         </button>
       </form>
       <dialog id="my_modal_1" className="modal">
-        <div className="modal-box  max-w-[70rem]">
-          <h3 className="font-bold text-base ">You selected ({currentAddress.name})</h3>
-          <h3 className="font-bold text-2xl text-sky-500 mb-5">Send only {currentAddress.name} to this address!!!</h3>
+        <div className="modal-box max-w-[70rem]">
+          <h3 className="font-bold text-base">You selected <span className="uppercase ">({currentAddress.name})</span></h3>
+          <h3 className="font-bold text-2xl text-sky-500 mb-5">Send only<span className="uppercase ">({currentAddress.name})</span> to this address!!!</h3>
           <hr />
-          <div>
+        
             <div>
-
+              {/* Generate QR code */}
+              {paymentAddress && (
+                <QRCode value={paymentAddress} size={256} className="mx-auto my-4" />
+              )}
             </div>
-            <div>
+            <h3 className="text-center">--------or---------</h3>
+            <div className="md:px-64">
               {currentAddress && currentAddress.address && (
-                <div className=" p-4 rounded-md inline-block">
-                  <div className="flex items-center border  rounded-md border-sky-500 p-2 justify-center space-x-2 mt-4">
-                    <h1 className="font-bold text-xl   ">{paymentResponse.address_in}</h1>
+                <div >
+                  <div className="flex items-center border rounded-md border-sky-500 p-2 justify-center space-x-2 mt-4">
+                    <h1 className="font-bold text-sm  md:text-xl">{paymentResponse.address_in}</h1>
                     <CopyToClipboard text={paymentResponse.address_in} onCopy={handleCopy}>
                       <button className="text-sky-500 hover:text-sky-700">
                         <FaCopy size={20} />
@@ -158,7 +146,7 @@ const Amount = () => {
                 </div>
               )}
             </div>
-          </div>
+         <br />
           <hr />
           <div>
 
@@ -171,8 +159,6 @@ const Amount = () => {
           </div>
         </div>
       </dialog>
-
-
     </div>
   );
 };
