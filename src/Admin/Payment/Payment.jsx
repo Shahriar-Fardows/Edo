@@ -29,7 +29,6 @@ const Payment = () => {
 
     }
 
-
     return (
         <div>
             <section className=" border border-sky-500 border-dashed rounded-md w-full py-14">
@@ -87,7 +86,7 @@ const Payment = () => {
                         </div>
                         <div className="modal-action">
                             <form method="dialog">
-                                {/* if there is a button in form, it will close the modal */}
+                                {/* if there is a button in form, it will close the modal.............. */}
                                 <button className="btn">Close</button>
                             </form>
                         </div>
