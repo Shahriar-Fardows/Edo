@@ -16,6 +16,9 @@ import Login from "../Log/Login";
 import SignUp from "../Log/SignUp";
 import Root from "../Root";
 import PrivetRoute from "./PrivetRoutes";
+import TotalUser from "../Admin/Total_user/TotalUser";
+import Recharge from "../Components/Dashboard/Recharge/Recharge";
+import Payment from "../Admin/Payment/Payment";
 
 const Routes = createBrowserRouter([
   {
@@ -52,6 +55,11 @@ const Routes = createBrowserRouter([
         path: "/dashboard/post",
         element: <Post />,
       }, 
+      {
+        path: "/dashboard/recharge",
+        element: <Recharge />,
+      }, 
+     
       {
         path: "/web-admin",
         element: <AdminLogin/>
@@ -90,6 +98,15 @@ const Routes = createBrowserRouter([
         path: "api-update",
         element: <AdminApi />,
       },
+      {
+        path: "total-user",
+        element: <TotalUser />,
+      },
+      {
+        path: "payment",
+        element: <Payment />,
+      },
+      
     ]
   }
  

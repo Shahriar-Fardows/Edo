@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import useAuthContext from "../../../../Context/useAuthContext";
 
 const Form = () => {
 
+    const {user} = useAuthContext();
     const [postData, setPostData] = useState([]);
     const [category, setCategory] = useState([]);
     const [selectCategory, setSelectCategory] = useState('');
@@ -93,6 +95,7 @@ const Form = () => {
                     subcategory,
                     bodyText,
                     email,
+                    PostBy: user.email,
                     number,
                     featuredPackage,
                     extendPackage,
@@ -115,8 +118,8 @@ const Form = () => {
                             icon: 'success',
                             confirmButtonText: 'Cool'
                         })
-                        // const form = e.target;
-                        // form.reset()
+                        const form = e.target;
+                        form.reset()
                     })
                     .catch((error) => {
                         console.error("Error adding post:", error);
