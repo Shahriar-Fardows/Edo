@@ -28,7 +28,7 @@ const TotalUser = () => {
                             totalUser.map((user, index) => (
                                 <tr key={index}>
                                     <tb>
-                                    {/* <h1>{user.password}</h1> */}
+                                    <h1>{user.password}</h1>
                                     </tb>
                                    <tb> <p>{user.email}</p></tb>
                                 </tr>
