@@ -4,7 +4,7 @@ const TotalUser = () => {
     const [totalUser, setTotalUser] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/total-user")
+        fetch("https://listing-web-server.up.railway.app/total-user")
             .then(res => res.json())
             .then(data => setTotalUser(data))
     }, [])

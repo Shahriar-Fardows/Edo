@@ -8,7 +8,7 @@ const Address = () => {
   // get the address list
 
   useEffect(() => {
-    fetch("http://localhost:5000/address")
+    fetch("https://listing-web-server.up.railway.app/address")
       .then((response) => response.json())
       .then((data) => {
         setAddressList(data);
@@ -31,7 +31,7 @@ const Address = () => {
       confirmButtonText: "Yes, delete it!"
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/address/${id}`, {
+        fetch(`https://listing-web-server.up.railway.app/address/${id}`, {
           method: "DELETE",
         })
           .then((response) => response.json())

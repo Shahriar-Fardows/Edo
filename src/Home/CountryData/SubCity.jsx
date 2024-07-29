@@ -13,7 +13,7 @@ const SubCity = () => {
     const [category, setCategory] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/category`)
+        fetch(`https://listing-web-server.up.railway.app/category`)
             .then((response) => response.json())
             .then((data) => {
                 setCategory(data);
@@ -33,7 +33,7 @@ const SubCity = () => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/${categoryId}/sub-category/${encodeURIComponent(subcat)}`, {
+                fetch(`https://listing-web-server.up.railway.app/${categoryId}/sub-category/${encodeURIComponent(subcat)}`, {
                     method: 'DELETE'
                 })
                     .then(response => response.json())
@@ -56,7 +56,7 @@ const SubCity = () => {
     };
 
     const fetchCategories = () => {
-        fetch(`http://localhost:5000/category`)
+        fetch(`https://listing-web-server.up.railway.app/category`)
             .then((response) => response.json())
             .then((data) => {
                 setCategory(data);
@@ -64,7 +64,7 @@ const SubCity = () => {
     };
 
     return (
-        <div className="border border-sky-500 border-dashed px-4 my-5 w-full">
+        <div className="border  border-dashed px-4 my-5 w-full">
             <div className="text-sm breadcrumbs">
                 <ul>
                     <li><Link to='/'>{country}</Link ></li>
@@ -73,7 +73,7 @@ const SubCity = () => {
                 </ul>
             </div>
             <div className="py-5">
-                <div className="lg:border lg:flex justify-evenly lg:border-sky-500 border-dashed py-10 lg:px-10 my-5">
+                <div className="lg:border lg:flex justify-evenly lg: border-dashed py-10 lg:px-10 my-5">
                     {category.map((cat) => (
                         <div className="lg:w-80 py-2" key={cat._id}>
                             <div className="w-full text-center px-4 text-sm border rounded text-slate-200 border-slate-900 bg-slate-700" role="alert">

@@ -8,7 +8,7 @@ const ActivePost = () => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/post?email=${user?.email}`)
+        fetch(`https://listing-web-server.up.railway.app/post?email=${user?.email}`)
             .then(response => response.json())
             .then(data => {
                 console.log(data);
@@ -17,7 +17,7 @@ const ActivePost = () => {
     }, [user?.email]);
 
     return (
-        <div className="border border-sky-500 border-dashed py-10 px-10 my-5 w-full ">
+        <div className="border  border-dashed py-10 px-10 my-5 w-full ">
             <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
 
                 <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">

@@ -3,10 +3,13 @@ import Admin from "../Admin/Admin";
 import AdminApi from "../Admin/AdminApi/AdminApi";
 import AdminHome from "../Admin/AdminHome/AdminHome";
 import AdminLogin from "../Admin/AdminLogin/AdminLogin";
+import Payment from "../Admin/Payment/Payment";
+import TotalUser from "../Admin/Total_user/TotalUser";
 import Dashboard from "../Components/Dashboard/Dashboard";
 import AllPost from "../Components/Dashboard/Post/AllPost/AllPost";
 import PostInfo from "../Components/Dashboard/Post/AllPost/PostInfo";
 import Post from "../Components/Dashboard/Post/Post";
+import Recharge from "../Components/Dashboard/Recharge/Recharge";
 import Profile from "../Components/Profile/Profile";
 import Error from "../Error/Error";
 import SubCity from "../Home/CountryData/SubCity";
@@ -16,9 +19,7 @@ import Login from "../Log/Login";
 import SignUp from "../Log/SignUp";
 import Root from "../Root";
 import PrivetRoute from "./PrivetRoutes";
-import TotalUser from "../Admin/Total_user/TotalUser";
-import Recharge from "../Components/Dashboard/Recharge/Recharge";
-import Payment from "../Admin/Payment/Payment";
+import Test from "../Home/test/Test";
 
 const Routes = createBrowserRouter([
   {
@@ -31,19 +32,23 @@ const Routes = createBrowserRouter([
         element: <Home />,
       },   
       {
+        path: "/test",
+        element: <Test />,
+      },   
+      {
         path: "/:country/:city/:subcities",
         element: <SubCity />,
-        loader: ({params})=> fetch(`http://localhost:5000/${params.country}/${params.city}/${params.subcities}`)
+        loader: ({params})=> fetch(`https://listing-web-server.up.railway.app/${params.country}/${params.city}/${params.subcities}`)
       },   
       {
         path: "/:country/:city/:subcities/:cat/:subcat",
         element: <AllPost />,
-        loader: ({params})=> fetch(`http://localhost:5000/${params.country}/${params.city}/${params.subcities}/${params.cat}/${params.subcat}`)
+        loader: ({params})=> fetch(`https://listing-web-server.up.railway.app/${params.country}/${params.city}/${params.subcities}/${params.cat}/${params.subcat}`)
       },
       {
         path: "/:country/:city/:subcities/:cat/:subcat/:id",
         element: <PostInfo />,
-        loader: ({params})=> fetch(`http://localhost:5000/post/${params.id}`)
+        loader: ({params})=> fetch(`https://listing-web-server.up.railway.app/post/${params.id}`)
         
       } 
        ,

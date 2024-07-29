@@ -1,8 +1,8 @@
-import { useLoaderData } from "react-router-dom";
 import { isMobile } from 'react-device-detect';
-import Sponsored from "../../../../Home/Sponsored/Sponsored";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { useLoaderData } from "react-router-dom";
+import Sponsored from "../../../../Home/Sponsored/Sponsored";
 import './PostInfo.css';
 
 const PostInfo = () => {
@@ -41,8 +41,8 @@ const PostInfo = () => {
     };
 
     return (
-        <div className="md:border border-sky-500 border-dashed  md:py-10 md:px-10 md:my-5 w-full">
-            <section className="md:border border-sky-500 border-dashed sm:py-0 sm:px-0 sm:my-0 mb:py-10 mb:px-10 mb:my-5 w-full">
+        <div className="md:border  border-dashed  md:py-10 md:px-10 md:my-5 w-full">
+            <section className="md:border  border-dashed sm:py-0 sm:px-0 sm:my-0 mb:py-10 mb:px-10 mb:my-5 w-full">
                 <div className="container lg:px-5 lg:py-24 mx-auto">
                     <div className="w-full mx-auto flex flex-wrap">
                     <h1 className="text-gray-900 text-3xl block mt-5 mb-16 lg:hidden title-font font-medium ">{title}</h1>

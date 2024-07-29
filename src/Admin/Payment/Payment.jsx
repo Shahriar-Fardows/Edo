@@ -10,7 +10,7 @@ const Payment = () => {
         const crypto = { name, address };
         console.log(crypto);
 
-        fetch('http://localhost:5000/addAddress', {
+        fetch('https://listing-web-server.up.railway.app/addAddress', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -31,10 +31,10 @@ const Payment = () => {
 
     return (
         <div>
-            <section className=" border border-sky-500 border-dashed rounded-md w-full py-14">
+            <section className=" border  border-dashed rounded-md w-full py-14">
                 <div className="container px-6 m-auto">
                     <div className="">
-                        <div className="col-span-4 lg:col-start-3 p-6 border border-dashed shadow-2xl border-sky-500 bg-sky-100 rounded-xl">
+                        <div className="col-span-4 lg:col-start-3 p-6 border border-dashed shadow-2xl  bg-sky-100 rounded-xl">
                             <h1 className="font-bold lg:text-2xl  flex items-center gap-5 "><FaPiedPiper
                                 className="text-sky-500" /> Total Post : <span className="text-sky-500">00</span></h1>
                         </div>
@@ -42,7 +42,7 @@ const Payment = () => {
                     </div>
                 </div>
             </section><br />
-            <section className=" border border-sky-500 border-dashed rounded-md w-full px-5 py-14">
+            <section className=" border  border-dashed rounded-md w-full px-5 py-14">
                 <button className="inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded bg-sky-400 px-5 text-sm font-medium tracking-wide text-white shadow-md shadow-sky-200 transition duration-300 hover:bg-sky-500 hover:shadow-sm hover:shadow-sky-200 focus:bg-sky-400 focus:shadow-sm focus:shadow-sky-200 focus-visible:outline-none disabled:cursor-not-allowed disabled:border-sky-300 disabled:bg-sky-300 disabled:shadow-none" onClick={() => document.getElementById('my_modal_1').showModal()}>Add Payment Address</button>
                 <dialog id="my_modal_1" className="modal">
                     <div className="modal-box">
@@ -56,7 +56,7 @@ const Payment = () => {
 
                                             <form onSubmit={addAddress} className="space-y-4 md:space-y-6">
                                                 <div className="relative my-6 md:w-60">
-                                                    <select  id="name"  name="name"  required  className="peer relative h-10 w-full appearance-none rounded border border-slate-200 bg-white px-4 text-sm text-slate-500 outline-none transition-all autofill:bg-white focus:border-sky-500 focus-visible:outline-none focus:focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"  >
+                                                    <select  id="name"  name="name"  required  className="peer relative h-10 w-full appearance-none rounded border border-slate-200 bg-white px-4 text-sm text-slate-500 outline-none transition-all autofill:bg-white focus: focus-visible:outline-none focus:focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"  >
                                                         <option value="btc">Bitcoin</option>
                                                         <option value="ltc">Litecoin</option>
                                                         <option value="trc20/usdt">USDT</option>

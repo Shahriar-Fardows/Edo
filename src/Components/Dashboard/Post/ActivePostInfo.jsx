@@ -19,7 +19,7 @@ const ActivePostInfo = ({post}) => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/post/${_id}`, {
+                fetch(`https://listing-web-server.up.railway.app/post/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(response => response.json())
