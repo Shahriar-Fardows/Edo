@@ -16,14 +16,14 @@ const Form = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch("http://localhost:5000/country")
+        fetch("https://listing-web-server.up.railway.app/country")
             .then((response) => response.json())
             .then((data) => {
                 setPostData(data);
             });
     }, []);
     useEffect(() => {
-        fetch("http://localhost:5000/category")
+        fetch("https://listing-web-server.up.railway.app/category")
             .then((response) => response.json())
             .then((data) => {
                 setCategory(data);
@@ -103,7 +103,7 @@ const Form = () => {
                 };
 
 
-                fetch("http://localhost:5000/post", {
+                fetch("https://listing-web-server.up.railway.app/post", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -161,7 +161,7 @@ const Form = () => {
     return (
         <div>
             <form onSubmit={postNow} className="py-10" action="">
-                <div className="lg:border lg:border-sky-500 lg:border-dashed py-5 lg:px-5 lg:my-5 w-full">
+                <div className="lg:border lg: lg:border-dashed py-5 lg:px-5 lg:my-5 w-full">
 
                     <div>
                         <label htmlFor="" className="text-2xl">Select Country, City and Sub-city</label><br /><br />
@@ -170,7 +170,7 @@ const Form = () => {
                                 name="country"
                                 value={selectedCountry}
                                 onChange={(e) => handleCountryFilter(e.target.value)}
-                                className="peer relative h-10 w-full mr-2 appearance-none rounded border border-slate-200 bg-white px-4 text-sm text-slate-500 outline-none transition-all autofill:bg-white focus:border-sky-500 focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
+                                className="peer relative h-10 w-full mr-2 appearance-none rounded border border-slate-200 bg-white px-4 text-sm text-slate-500 outline-none transition-all autofill:bg-white focus: focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
                                 required
                             >
                                 <option value="">Select Country</option>
@@ -183,7 +183,7 @@ const Form = () => {
                                 name="city"
                                 value={selectedCity}
                                 onChange={(e) => handleCityFilter(e.target.value)}
-                                className="peer relative h-10 w-full appearance-none rounded border border-slate-200 bg-white px-4 text-sm text-slate-500 outline-none transition-all autofill:bg-white focus:border-sky-500 focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required
+                                className="peer relative h-10 w-full appearance-none rounded border border-slate-200 bg-white px-4 text-sm text-slate-500 outline-none transition-all autofill:bg-white focus: focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required
                             >
                                 <option value="">Select City</option>
                                 {postData
@@ -199,7 +199,7 @@ const Form = () => {
                                 name="subcity"
                                 value={selectedSubCity}
                                 onChange={(e) => handleSubCityFilter(e.target.value)}
-                                className="peer relative h-10 w-full appearance-none rounded border border-slate-200 bg-white px-4 text-sm text-slate-500 outline-none transition-all autofill:bg-white focus:border-sky-500 focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required
+                                className="peer relative h-10 w-full appearance-none rounded border border-slate-200 bg-white px-4 text-sm text-slate-500 outline-none transition-all autofill:bg-white focus: focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required
                             >
                                 <option value="">Select Subcity</option>
                                 {postData
@@ -222,7 +222,7 @@ const Form = () => {
 
                         <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-5">
                             <div className="relative my-6">
-                                <input id="id-01" type="text" name="title" placeholder="your name" className="relative w-full h-10 px-4 text-sm placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white invalid:border-sky-500 invalid:text-sky-500 focus:border-sky-500 focus:outline-none invalid:focus:border-sky-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required />
+                                <input id="id-01" type="text" name="title" placeholder="your name" className="relative w-full h-10 px-4 text-sm placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white invalid: invalid:text-sky-500 focus: focus:outline-none invalid:focus: disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required />
                                 <label htmlFor="id-01" className="cursor-text peer-focus:cursor-default peer-autofill:-top-2 absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-required:after:text-sky-500 peer-required:after:content-['\00a0*'] peer-invalid:text-sky-500 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-sky-500 peer-invalid:peer-focus:text-sky-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent">
                                     Your Title
                                 </label>
@@ -231,7 +231,7 @@ const Form = () => {
                                 name="category"
                                 value={selectCategory}
                                 onChange={(e) => handleCategoryFilter(e.target.value)}
-                                className="peer relative h-10 w-full appearance-none rounded border border-slate-200 bg-white px-4 text-sm text-slate-500 outline-none transition-all autofill:bg-white focus:border-sky-500 focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required
+                                className="peer relative h-10 w-full appearance-none rounded border border-slate-200 bg-white px-4 text-sm text-slate-500 outline-none transition-all autofill:bg-white focus: focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required
                             >
                                 <option value="">Select Category</option>
                                 {category.map((category) => (
@@ -243,7 +243,7 @@ const Form = () => {
                                 name="subcategory"
                                 value={selectSubCategory}
                                 onChange={(e) => handleSubCategoryFilter(e.target.value)}
-                                className="peer relative h-10 w-full appearance-none rounded border border-slate-200 bg-white px-4 text-sm text-slate-500 outline-none transition-all autofill:bg-white focus:border-sky-500 focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required
+                                className="peer relative h-10 w-full appearance-none rounded border border-slate-200 bg-white px-4 text-sm text-slate-500 outline-none transition-all autofill:bg-white focus: focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required
                             >
                                 <option value="">Select Sub-Category</option>
                                 {category
@@ -266,7 +266,7 @@ const Form = () => {
                                 name="bodyText"
                                 placeholder="Posting Body message"
                                 rows="3"
-                                className="peer h-64 relative w-full rounded border border-slate-200 px-4 py-2 text-sm text-slate-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid:border-sky-500 invalid:text-sky-500 focus:border-sky-500 focus:outline-none invalid:focus:border-sky-500 focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required
+                                className="peer h-64 relative w-full rounded border border-slate-200 px-4 py-2 text-sm text-slate-500 placeholder-transparent outline-none transition-all autofill:bg-white invalid: invalid:text-sky-500 focus: focus:outline-none invalid:focus: focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required
                             ></textarea>
                             <label
                                 htmlFor="id-01"
@@ -285,13 +285,13 @@ const Form = () => {
                     <div>
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
                             <div className="relative my-6">
-                                <input id="id-01" type="text" name="email" placeholder="your name" className="relative w-full h-10 px-4 text-sm placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white invalid:border-sky-500 invalid:text-sky-500 focus:border-sky-500 focus:outline-none invalid:focus:border-sky-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required />
+                                <input id="id-01" type="text" name="email" placeholder="your name" className="relative w-full h-10 px-4 text-sm placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white invalid: invalid:text-sky-500 focus: focus:outline-none invalid:focus: disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required />
                                 <label htmlFor="id-01" className="cursor-text peer-focus:cursor-default peer-autofill:-top-2 absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-required:after:text-sky-500 peer-required:after:content-['\00a0*'] peer-invalid:text-sky-500 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-sky-500 peer-invalid:peer-focus:text-sky-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent">
                                     Your Email
                                 </label>
                             </div>
                             <div className="relative my-6">
-                                <input id="id-01" type="number" name="number" placeholder="your name" className="relative w-full h-10 px-4 text-sm placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white invalid:border-sky-500 invalid:text-sky-500 focus:border-sky-500 focus:outline-none invalid:focus:border-sky-500 disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required />
+                                <input id="id-01" type="number" name="number" placeholder="your name" className="relative w-full h-10 px-4 text-sm placeholder-transparent transition-all border rounded outline-none focus-visible:outline-none peer border-slate-200 text-slate-500 autofill:bg-white invalid: invalid:text-sky-500 focus: focus:outline-none invalid:focus: disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required />
                                 <label htmlFor="id-01" className="cursor-text peer-focus:cursor-default peer-autofill:-top-2 absolute left-2 -top-2 z-[1] px-2 text-xs text-slate-400 transition-all before:absolute before:top-0 before:left-0 before:z-[-1] before:block before:h-full before:w-full before:bg-white before:transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-sm peer-required:after:text-sky-500 peer-required:after:content-['\00a0*'] peer-invalid:text-sky-500 peer-focus:-top-2 peer-focus:text-xs peer-focus:text-sky-500 peer-invalid:peer-focus:text-sky-500 peer-disabled:cursor-not-allowed peer-disabled:text-slate-400 peer-disabled:before:bg-transparent">
                                     Your Number
                                 </label>
@@ -309,7 +309,7 @@ const Form = () => {
                                 </p>
                                 <select
                                     name="featuredPackage"
-                                    className="peer relative h-10 w-full mr-2 appearance-none rounded border border-slate-200 bg-white px-4 text-sm text-slate-500 outline-none transition-all autofill:bg-white focus:border-sky-500 focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required
+                                    className="peer relative h-10 w-full mr-2 appearance-none rounded border border-slate-200 bg-white px-4 text-sm text-slate-500 outline-none transition-all autofill:bg-white focus: focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400" required
                                 >
                                     <option value="">Select Country</option>
                                     {postData.map((country) => (
@@ -325,7 +325,7 @@ const Form = () => {
                                 </p>
                                 <select
                                     name="extendPackage"
-                                    className="peer relative h-10 w-full mr-2 appearance-none rounded border border-slate-200 bg-white px-4 text-sm text-slate-500 outline-none transition-all autofill:bg-white focus:border-sky-500 focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
+                                    className="peer relative h-10 w-full mr-2 appearance-none rounded border border-slate-200 bg-white px-4 text-sm text-slate-500 outline-none transition-all autofill:bg-white focus: focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
                                     required
                                 >
                                     <option value="">Select Country</option>

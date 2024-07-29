@@ -1,7 +1,7 @@
+import QRCode from "qrcode.react"; // Import the QRCode component
 import { useEffect, useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { FaCopy } from "react-icons/fa";
-import QRCode from "qrcode.react"; // Import the QRCode component
 
 const Amount = () => {
   const [selectedOption, setSelectedOption] = useState("");
@@ -12,7 +12,7 @@ const Amount = () => {
   const [paymentResponse, setPaymentResponse] = useState('');
 
   useEffect(() => {
-    fetch(`http://localhost:5000/address`)
+    fetch(`https://listing-web-server.up.railway.app/address`)
       .then((res) => res.json())
       .then((data) => {
         setAddresses(data);
@@ -44,7 +44,7 @@ const Amount = () => {
   const handlePayment = async (selectedAddress) => {
     try {
       const query = new URLSearchParams({
-        callback: 'http://localhost:5000/history', // Replace with your callback URL
+        callback: 'https://listing-web-server.up.railway.app/history', // Replace with your callback URL
         address: selectedAddress.address,
         pending: '0',
         confirmations: '1',
@@ -73,7 +73,7 @@ const Amount = () => {
   };
 
   return (
-    <div className="border border-sky-500 border-dashed rounded-md w-full py-14 px-10">
+    <div className="border  border-dashed rounded-md w-full py-14 px-10">
       <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
         <h1>Select Your Payment Option !!</h1>
         <div className="my-6 md:w-60 lg:w-[30vw]">
@@ -81,7 +81,7 @@ const Amount = () => {
             id="name"
             name="name"
             required
-            className="text-2xl peer relative h-16 w-full appearance-none rounded border border-slate-200 bg-white px-4 text-slate-500 outline-none transition-all autofill:bg-white focus:border-sky-500 focus-visible:outline-none focus:focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
+            className="text-2xl peer relative h-16 w-full appearance-none rounded border border-slate-200 bg-white px-4 text-slate-500 outline-none transition-all autofill:bg-white focus: focus-visible:outline-none focus:focus-visible:outline-none disabled:cursor-not-allowed disabled:bg-slate-50 disabled:text-slate-400"
             onChange={handleSelectChange}
           >
             <option value="">Select option</option>
@@ -134,7 +134,7 @@ const Amount = () => {
             <div className="md:px-64">
               {currentAddress && currentAddress.address && (
                 <div >
-                  <div className="flex items-center border rounded-md border-sky-500 p-2 justify-center space-x-2 mt-4">
+                  <div className="flex items-center border rounded-md  p-2 justify-center space-x-2 mt-4">
                     <h1 className="font-bold text-sm  md:text-xl">{paymentResponse.address_in}</h1>
                     <CopyToClipboard text={paymentResponse.address_in} onCopy={handleCopy}>
                       <button className="text-sky-500 hover:text-sky-700">

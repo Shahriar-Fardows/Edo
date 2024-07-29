@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
 import { MdOutlinePayments } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 const AdminNav = () => {
     const [isSideNavOpen, setIsSideNavOpen] = useState(false);
@@ -9,7 +9,7 @@ const AdminNav = () => {
     console.log(totalUser);
 
     useEffect(() => {
-        fetch("http://localhost:5000/total-user")
+        fetch("https://listing-web-server.up.railway.app/total-user")
             .then((res) => res.json())
             .then((data) => setTotalUser(data));
     }, []);
