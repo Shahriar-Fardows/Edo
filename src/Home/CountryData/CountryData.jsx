@@ -74,7 +74,7 @@ const CountryData = () => {
                                 aria-labelledby="title-ac27 desc-ac27"
                             >
                                 <title id="title-ac27">Leading icon</title>
-                                {/* <desc id="desc-ac27">Icon that describes the summary</desc> */}
+                                <desc id="desc-ac27">Icon that describes the summary</desc>
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
